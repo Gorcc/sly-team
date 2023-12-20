@@ -1,0 +1,26 @@
+.footer-container{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    font-size: 12px;
+
+    span{
+        margin: 4px 0;
+    }
+
+    a{
+        color: white;
+        margin: 0 12px;
+    }
+
+    .mail{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

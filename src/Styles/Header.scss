@@ -1,0 +1,82 @@
+@import url(./base.css);
+@import url(./variables.css);
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  width: 100%;
+  border-bottom: 3px solid var(--primary-purple);
+}
+
+.header-container img {
+  width: 180px;
+}
+
+ul {
+  display: flex;
+  z-index: 9999;
+  margin: 0 30px;
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    margin: 8px 12px;
+    font-size: 14px;
+    transition: 0.3s all ease;
+    border-bottom: 1px solid black;
+  }
+
+  a:hover {
+    border-bottom: 1px solid white;
+  }
+}
+
+.language-btn {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+
+  border-radius: 5px;
+  margin: 0 2px;
+
+  text-align: center;
+  background-color: black;
+  border: none;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.dropdown-wrapper {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.dropdown-wrapper{
+  transition: 0.3s all ease;
+}
+.dropdown li {
+  padding: 10px;
+}
+
+.dropdown a {
+  
+  display: block;
+}
+
+
+.dropdown-wrapper:hover .dropdown {
+  display: block;
+}
