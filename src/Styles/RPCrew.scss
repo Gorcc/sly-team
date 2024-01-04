@@ -1,0 +1,162 @@
+.rp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.bg-glitch{
+  background-image: url(../Assets/glitch.gif);
+
+}
+
+.rp-container a{
+  color: white;
+  text-decoration: none;
+}
+
+.rp-card {
+  background-color: white;
+  width: 250px;
+  height: 250px;
+  margin: 12px;
+  border-radius: 5%;
+}
+
+
+
+.rp-card h2 {
+  width: 100%;
+
+  text-align: center;
+}
+
+.second-lane {
+  display: flex;
+  margin: 40px;
+
+  .rp-card {
+    margin: 40px 60px;
+  }
+}
+.rp-img {
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+.lorenzo {
+  background-image: url(../Assets/AVATAR/Lorenzov1.png);
+}
+
+.lorenzo:hover {
+  background-image: url(../Assets/AVATAR/Lorenzov2.png);
+}
+.lorenzo.hover {
+  background-image: url(../Assets/AVATAR/Lorenzov2.png);
+}
+.dave {
+  background-image: url(../Assets/AVATAR/Thetv1.png);
+}
+.dave:hover {
+  background-image: url(../Assets/AVATAR/Thetv2.png);
+}
+.dave.hover {
+  background-image: url(../Assets/AVATAR/Thetv2.png);
+}
+
+.rian {
+  background-image: url(../Assets/AVATAR/Thettv1.png);
+}
+.rian:hover {
+  background-image: url(../Assets/AVATAR/Thettv2.png);
+}
+.rian.hover {
+  background-image: url(../Assets/AVATAR/Thettv2.png);
+}
+
+.dante {
+  background-image: url(../Assets/AVATAR/Dante1.png);
+}
+.dante:hover {
+  background-image: url(../Assets/AVATAR/Dante2.png);
+}
+.dante.hover {
+  background-image: url(../Assets/AVATAR/Dante2.png);
+}
+.tyrone {
+  background-image: url(../Assets/AVATAR/Mordredv1.png);
+}
+.tyrone:hover {
+  background-image: url(../Assets/AVATAR/Mordredv2.png);
+}
+.tyrone.hover {
+  background-image: url(../Assets/AVATAR/Mordredv2.png);
+}
+
+.loid {
+  background-image: url(../Assets//AVATAR/Htunev1.png);
+}
+.loid:hover {
+  background-image: url(../Assets//AVATAR/Htunev2.png);
+}
+.loid.hover {
+  background-image: url(../Assets//AVATAR/Htunev2.png);
+}
+
+
+.bennao{
+    background-image: url(../Assets/AVATAR/Reikiv1.png);
+}
+.bennao:hover{
+    background-image: url(../Assets/AVATAR/Reikiv2.png);
+}
+.bennao.hover{
+  background-image: url(../Assets/AVATAR/Reikiv2.png);
+}
+
+
+.carter{
+    background-image: url(../Assets/AVATAR/Proxiv1.png);
+}
+.carter:hover{
+    background-image: url(../Assets/AVATAR/Proxiv2.png);
+}
+.carter.hover{
+  background-image: url(../Assets/AVATAR/Proxiv2.png);
+}
+.jayj{
+    background-image: url(../Assets/AVATAR/Divov1.png);
+}
+.jayj:hover{
+    background-image: url(../Assets/AVATAR/Divov2.png);
+}
+.jayj.hover{
+  background-image: url(../Assets/AVATAR/Divov2.png);
+}
+
+.russel{
+  background-image: url(../Assets/AVATAR/russel1.png);
+}
+.russel:hover{
+  background-image: url(../Assets/AVATAR/russel2.png);
+}
+.russel.hover{
+background-image: url(../Assets/AVATAR/russel2.png);
+}
+
+
+@media screen and (max-width: 1000px) {
+
+
+.second-lane{
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+}
+  
+}

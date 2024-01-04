@@ -1,16 +1,35 @@
 import React from "react";
-import VideoBg from "../Assets/herovid.mp4";
-import otherBg from "../Assets/ha.mp4"
+
 import { useState, useEffect } from "react";
+
+import { useTranslation } from "react-i18next";
 import "../Styles/Hero.scss";
 
 const Hero = () => {
+
+
+
+
+  const [language, setLanguage] = useState("en");
+  const [t, i18n] = useTranslation("global");
+  const [isAnimated, setIsAnimated] = useState(false);
+  const [page, setPage] = useState("about");
+
+  useEffect(() => {
+    setIsAnimated(true);
+  }, []);
+  
   const Texts = [
-    "Welcome to Team Sly Website",
-    "Learn More About Us",
-    "Team Members",
+    t("home.learn"),
+    t("home.check"),
+    t("home.race"),
+    t("home.drift")
+
   ];
-  const BtnTexts = ["About Us", "Blabla", "Button"];
+  const BtnTexts = [ t("home.learn1"),
+  t("home.check1"),
+  t("home.race1"),
+  t("home.drift1")];
   const [contentIndex, setContentIndex] = useState(0);
   const [btnIndex, setbtnIndex] = useState(0);
   const [animate, setAnimate] = useState(true);
@@ -29,18 +48,38 @@ const Hero = () => {
     setAnimate(false);
   };
 
+
+  useEffect(() => {
+    switch (btnIndex) {
+      case 0:
+        setPage("about");
+        break;
+      case 1:
+        setPage("cars");
+        break;
+      case 2:
+        setPage("rpcrew");
+        break;
+      case 3:
+        setPage("driftcrew");
+        break;
+      default:
+        setPage("about");
+    }
+  }, [btnIndex]);
   return (
     <div className="main">
-      <video src={VideoBg} autoPlay loop muted></video>
+      <video src="https://res.cloudinary.com/dvi8iejpx/video/upload/v1704403324/Herovid_-_Trim_f6jca3.mp4" autoPlay loop muted></video>
       <div
         className={`content ${animate ? "animate" : ""}`}
         onAnimationEnd={onAnimationEnd}
       >
         <div className="content-wrap">
           <h1>{Texts[contentIndex]}</h1>
-          <button>{BtnTexts[btnIndex]}</button>
+          <a href={page}>{BtnTexts[btnIndex]}</a>
         </div>
       </div>
+    <h5>{t("header.current-server")}</h5>
     </div>
   );
 };

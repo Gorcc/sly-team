@@ -5,13 +5,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   z-index: 9999;
   width: 100%;
-  border-bottom: 3px solid var(--primary-purple);
+
+ 
 }
 
+.header-border{
+  border-bottom: 3px solid white;
+}
+
+
+
 .header-container img {
+  display: flex;
   width: 180px;
+  align-self: flex-end;
 }
 
 ul {
@@ -63,20 +73,123 @@ ul {
   left: 0;
   background-color: black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 0;
+
 }
 .dropdown-wrapper{
   transition: 0.3s all ease;
 }
 .dropdown li {
-  padding: 10px;
+  padding: 12px;
+  display: flex;
+  z-index: 9999999999;
+ 
 }
 
 .dropdown a {
-  
-  display: block;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 
 .dropdown-wrapper:hover .dropdown {
   display: block;
+}
+
+.header-list{
+  width: auto;
+  max-width: 100%;
+  
+  white-space: nowrap;
+  
+  transition: all 2s linear;
+}
+
+.animate-header{
+  opacity: 1;
+  max-width: 100%;
+  
+}
+
+
+
+.mobile-container{
+  position: relative;
+  z-index: 999;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+  padding: 12px;
+  img{
+    width: 100px;
+  }
+
+  svg{
+    width: 24px;
+    height: 24px;
+  }
+}
+
+
+.right-bar{
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  right: 0;
+  z-index: 999999;
+  background-color: black;
+  height: 100vh;
+  transition: 0.3s all ease;
+  animation: myAnim 0.5s ease 0s 1 normal forwards;
+
+  svg{
+    height: 24px;
+  }
+
+
+  .mobile-header{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    li{
+      margin: 12px;
+      text-align: center;
+    }
+
+    a{
+      text-transform: uppercase;
+      font-family: 'MonumentExtended', sans-serif;
+      border-bottom: none;
+    }
+    button{
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+    }
+  }
+}
+
+@keyframes myAnim {
+	0% {
+		width: 0px;
+    opacity: 0;
+	}
+
+	100% {
+		width: 150px;
+    opacity: 1;
+	}
 }

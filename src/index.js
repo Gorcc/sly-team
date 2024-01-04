@@ -3,13 +3,21 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import global_en from "./translations/en/global.json"
-import global_tr from "./translations/tr/globa.json"
-import i18next from 'i18next';
+import global_en from "./translations/en/global.json";
+import global_tr from "./translations/tr/globa.json";
+import i18next from "i18next";
 import { I18nextProvider } from "react-i18next";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
+import Media from "./Pages/Media";
+import { AnimatePresence } from "framer-motion";
 i18next.init({
   interpolaration: { escapeValue: true },
-  lng: "en",
+  lng: "tr",
   resources: {
     en: {
       global: global_en,
@@ -21,10 +29,15 @@ i18next.init({
 });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     <I18nextProvider i18n={i18next}>
-    <App/>
+      <Router>
+        <Routes>
+          <Route path="/*" element={<App></App>} />
+        </Routes>
+      </Router>
     </I18nextProvider>
   </React.StrictMode>
 );

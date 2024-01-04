@@ -1,0 +1,95 @@
+.dcrew-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    width: 80%;
+    
+
+    h1{
+        text-align: center;
+    }
+}
+.dcrew-container h1{
+    font-family: 'MonumentExtended', sans-serif;
+    letter-spacing: 2px;
+    font-size: 32px;
+    
+}
+.dcrew-container .logo-img{
+    width: 40px;
+    height: 40px;
+}
+.management,.team-members,.team-trainees,.designer,.editors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.leader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    h1{
+        margin: 0 12px;
+        font-size: 24px;
+       
+    }
+}
+
+.member{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 12px;
+    flex-wrap: wrap;
+}
+
+.dcrew-header{
+    margin: 36px;
+}
+
+
+.d-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        margin: 0 12px;
+        font-size: 24px;
+        
+    }
+}
+.drift-img{
+    background-color: white ;
+    width: 250px ;
+    height: 250px ;
+    margin: 24px ;
+    border-radius: 5% ;
+    border: 1px solid rgba(128, 128, 128, 0.952);
+    object-fit: cover;
+   
+  }
+
+.editors{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+    
+}
+
+.dcrew-container{
+    .border-bottom{
+        border-bottom: 2px solid var(--primary-purple);
+        width: 100%;
+        text-align: center;
+        padding-bottom: 32px;
+    }
+}

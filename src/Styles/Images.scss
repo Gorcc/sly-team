@@ -1,0 +1,49 @@
+.images-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+  width: 80%;
+
+  h3 {
+    margin: 0;
+  }
+  h1 {
+    font-family: "MonumentExtended", sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .border {
+    border: 1px solid rgba(255, 255, 255, 0.233);
+  }
+}
+
+.img-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.images-wrap {
+  margin-bottom: 12px;
+  margin-top: 4px;
+}
+.images-container img {
+  object-fit: cover;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  margin: 4px 0;
+  border: 1px solid rgba(255, 255, 255, 0.233);
+}
+
+
+
+.images-container .small-img {
+  width: 33.15%;
+}
+.images-container .full-img {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,49 @@
+.videos-container {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+
+  h1{
+    font-family: 'MonumentExtended', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+.videos-middle {
+  width: 6px;
+  min-height: 100%;
+  background-color: white;
+}
+
+
+.videos-left,.videos-right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+
+}
+
+
+.drift-edits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    iframe{
+        margin-bottom: 12px;
+       
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  .videos-container{
+    flex-direction: column;
+  }
+
+}

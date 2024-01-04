@@ -1,9 +1,28 @@
+@font-face {
+    font-family: 'MonumentExtended';
+    src: url('../Fonts/MonumentExtended-Regular.otf') format('truetype');
+    /* Add additional font styles (e.g., font-weight, font-style) if needed */
+  }
+
 h1,h2,h3,h4,a,span{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 
 html{
     background-color: black;
     color: white;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.header-container a{
+    font-family: 'MonumentExtended', sans-serif;
+    font-weight: normal;
+}
+
+.language-btn{
+    font-family: 'MonumentExtended', sans-serif !important;
 }

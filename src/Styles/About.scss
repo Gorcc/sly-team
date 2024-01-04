@@ -1,0 +1,18 @@
+.about-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+
+  h1 {
+    font-family: "MonumentExtended", sans-serif;
+    font-weight: normal;
+  }
+  p{
+    width: 80%;
+  }
+}
