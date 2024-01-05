@@ -15,7 +15,7 @@ const Videos = () => {
 
           <div className="drift-edits">
             <iframe
-              width="560"
+              width="80%"
               height="315"
               src="https://www.youtube.com/embed/Y9K9s02-eDk?si=Lip4o1rO5MFoXeJR"
               title="YouTube video player"
@@ -24,7 +24,7 @@ const Videos = () => {
               allowfullscreen
             ></iframe>
             <iframe
-              width="560"
+              width="80%"
               height="315"
               src="https://www.youtube.com/embed/BvK9-9DmZYE?si=8pgxDjrYDTQ7Dchq"
               title="YouTube video player"
@@ -33,7 +33,7 @@ const Videos = () => {
               allowfullscreen
             ></iframe>
             <iframe
-              width="560"
+              width="80%"
               height="315"
               src="https://www.youtube.com/embed/acNTGsxVsNs?si=3ujDAUCZU6by_fuy"
               title="YouTube video player"
@@ -42,7 +42,7 @@ const Videos = () => {
               allowfullscreen
             ></iframe>
             <iframe
-              width="560"
+              width="80%"
               height="315"
               src="https://www.youtube.com/embed/Bx5YPTcH0jQ?si=OaKgC9hHyPZ7ekdf"
               title="YouTube video player"
@@ -52,7 +52,7 @@ const Videos = () => {
             ></iframe>{" "}
           </div>
           <iframe
-            width="560"
+            width="80%"
             height="315"
             src="https://www.youtube.com/embed/jIDigfZ8gEc?si=nD0brER67Dl7GitI"
             title="YouTube video player"
@@ -66,7 +66,7 @@ const Videos = () => {
           <h1>Race Videos</h1>
           <div className="drift-edits">
             <iframe
-              width="560"
+              width="80%"
               height="315"
               src="https://www.youtube.com/embed/3cHq21ve1_k?si=2TmrzqOmLPFJaW-_"
               title="YouTube video player"
@@ -75,7 +75,7 @@ const Videos = () => {
               allowfullscreen
             ></iframe>{" "}
             <iframe
-              width="560"
+              width="80%"
               height="315"
               src="https://www.youtube.com/embed/iJnE85bCxMM?si=8m-RtyO1u3zv5hEF"
               title="YouTube video player"
@@ -84,7 +84,7 @@ const Videos = () => {
               allowfullscreen
             ></iframe>
             <iframe
-              width="560"
+              width="80%"
               height="315"
               src="https://www.youtube.com/embed/ssaZhj-zMek?si=AZ17QBOGaNr7LmX9"
               title="YouTube video player"
@@ -93,7 +93,7 @@ const Videos = () => {
               allowfullscreen
             ></iframe>
             <iframe
-              width="560"
+              width="80%"
               height="315"
               src="https://www.youtube.com/embed/hnji1dCsj4o?si=pxqEqhnI2ZYgg17K"
               title="YouTube video player"
@@ -102,7 +102,7 @@ const Videos = () => {
               allowfullscreen
             ></iframe>
             <iframe
-              width="560"
+              width="80%"
               height="315"
               src="https://www.youtube.com/embed/4219epvI58M?si=l1JY2Lg4vsA0Sky8"
               title="YouTube video player"

@@ -6,7 +6,9 @@
 
   margin: 0 auto;
   width: 80%;
-
+  &.hidden {
+    display: none;
+  }
   h3 {
     margin: 0;
   }

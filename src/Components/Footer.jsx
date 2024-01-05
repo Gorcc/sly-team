@@ -12,7 +12,7 @@ const Footer = () => {
       </span>
         
         <span>All Right Reserved ©</span>
-        <a href="https://www.instagram.com/nixiedigital/" target='_blank'>Developed by Nixie Digital</a>
+        {/* <a href="https://www.instagram.com/nixiedigital/" target='_blank'>Developed by Nixie Digital</a> */}
     </div>
   )
 }
