@@ -22,11 +22,24 @@
 }
 
 .rp-card {
-  background-color: white;
+  background-color: grey;
   width: 250px;
   height: 250px;
   margin: 12px;
   border-radius: 5%;
+  animation: pulse 2s infinite ease-in-out;
+  
+}
+
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: rgba(255, 255, 255, 0.205)
+  }
+  
+  50% {
+    background-color: grey;
+  }
 }
 
 
@@ -53,10 +66,10 @@
   transition: 0.3s all ease;
   cursor: pointer;
 }
+
 .lorenzo {
   background-image: url(../Assets/AVATAR/Lorenzov1.webp);
 }
-
 .lorenzo:hover {
   background-image: url(../Assets/AVATAR/Lorenzov2.webp);
 }

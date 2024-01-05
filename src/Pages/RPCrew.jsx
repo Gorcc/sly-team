@@ -10,6 +10,11 @@ const RPCrew = () => {
   const [isTimerActive, setTimerActive] = useState(false);
   const Random = Math.floor(Math.random() * Times.length);
 
+
+  const handleLoad = () =>{
+    console.log("Lorenzo loaded")
+  }
+
   useEffect(() => {
     const intervalId = setInterval(() => {
       setTimerActive((prevTimerActive) => !prevTimerActive);
@@ -40,6 +45,7 @@ const RPCrew = () => {
           <a href="/lorenzo">
             <div
               className={`rp-img lorenzo ${isTimerActive ? "hover" : ""}`}
+              onLoad={handleLoad}
             ></div>
             <h2>Lorenzo</h2>
             <div
