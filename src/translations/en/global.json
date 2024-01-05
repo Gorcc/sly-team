@@ -67,7 +67,14 @@
     "age": "Age",
     "place": "Birth Place",
     "nationality": "Nationality",
-    "gender": "Gender"
+    "gender": "Gender",
+    "status1": "Alive",
+    "status2": "Inactive",
+    "status3": "Coma ( Car Crash )",
+    "place1": "Birth Place",
+    "nationality1": "USA",
+    "nationality2": "Japan",
+    "gender1": "Male"
   },
 
   "lorenzo": {

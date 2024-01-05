@@ -2,8 +2,6 @@ import React from "react";
 import "../Styles/RPCrew.scss";
 import Transition from "../transitions/transition";
 import Header from "../Components/Header";
-import Lorenzo1 from "../Assets/AVATAR/Lorenzov1.png";
-import Lorenzo2 from "../Assets/AVATAR/Lorenzov2.png";
 import Footer from "../Components/Footer";
 import { useEffect, useState } from "react";
 
@@ -11,7 +9,7 @@ const RPCrew = () => {
   const Times = [7000];
   const [isTimerActive, setTimerActive] = useState(false);
   const Random = Math.floor(Math.random() * Times.length);
-  console.log(Random);
+
   useEffect(() => {
     const intervalId = setInterval(() => {
       setTimerActive((prevTimerActive) => !prevTimerActive);

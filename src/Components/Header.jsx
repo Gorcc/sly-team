@@ -32,7 +32,7 @@ const Header = (props) => {
   const handleClick = () => {
     setisClicked(!isClicked);
   };
-  console.log("isclicked", isClicked);
+
 
   useEffect(() => {
     setIsAnimated(true);
@@ -41,7 +41,9 @@ const Header = (props) => {
     const newLanguage = language === "en" ? "tr" : "en";
     setLanguage(newLanguage);
     i18n.changeLanguage(newLanguage);
+    localStorage.setItem("language", language);
   };
+
   if (isMobile) {
     return (
       <>

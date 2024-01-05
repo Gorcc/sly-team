@@ -3,7 +3,7 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Wiki from "../Components/Wiki";
 import Transition from "../transitions/transition";
-import charImg from "../Assets/AVATAR/Htunev1.png";
+import charImg from "../Assets/AVATAR/Htunev1.webp";
 import { useTranslation } from "react-i18next";
 
 const Loid = () => {
@@ -38,13 +38,13 @@ const Loid = () => {
         culture={t("loid.9")}
         reason={t("loid.10")}
         goals={t("loid.12")}
-        active="Alive"
+        active={t("status.status1")}
         birthday="2003"
         aliases1="LS"
         age="21"
         birthplace="Osaka"
-        nationality="Japan"
-        gender="Male"
+        nationality={t("status.nationality2")}
+        gender={t("status.gender1")}
       ></Wiki>
       <Footer></Footer>
     </Transition>

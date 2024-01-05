@@ -3,7 +3,7 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Wiki from "../Components/Wiki";
 import Transition from "../transitions/transition";
-import charImg from "../Assets/AVATAR/Dante1.png";
+import charImg from "../Assets/AVATAR/Dante1.webp";
 import { useTranslation } from "react-i18next";
 
 const Dante = () => {
@@ -38,13 +38,13 @@ const Dante = () => {
         culture={t("dante.9")}
         reason={t("dante.10")}
         goals={t("dante.12")}
-        active="Alive"
+        active={t("status.status1")}
         birthday="-"
         aliases1="RB9"
         age="-"
         birthplace="Philadelphia"
-        nationality="USA"
-        gender="Male"
+        nationality={t("status.nationality1")}
+        gender={t("status.gender1")}
       ></Wiki>
       <Footer></Footer>
     </Transition>

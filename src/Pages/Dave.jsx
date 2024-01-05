@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import DaveImg from "../Assets/AVATAR/Thetv1.png";
+import DaveImg from "../Assets/AVATAR/Thetv1.webp";
 import Wiki from "../Components/Wiki";
 import Transition from "../transitions/transition";
 import { useTranslation } from "react-i18next";
@@ -26,15 +26,16 @@ const Dave = () => {
         hobbies={t("dave.2")}
         fears={t("dave.fear")}
         traits={t("dave.3")}
+        culture={t("dave.9")}
         negative={t("dave.negative")}
         goals={t("dave.12")}
-        active="Alive"
+        active={t("status.status1")}
         birthday="1999"
         aliases1="Sneeky"
         age="25"
         birthplace="San Bernardino"
-        nationality="USA"
-        gender="Male"
+        nationality={t("status.nationality1")}
+        gender={t("status.gender1")}
       ></Wiki>
       <Footer></Footer>
     </Transition>

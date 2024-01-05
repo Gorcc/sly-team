@@ -3,7 +3,7 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Wiki from "../Components/Wiki";
 import Transition from "../transitions/transition";
-import charImg from "../Assets/AVATAR/Proxiv1.png";
+import charImg from "../Assets/AVATAR/Proxiv1.webp";
 import { useTranslation } from "react-i18next";
 
 const Carter = () => {
@@ -18,13 +18,13 @@ const Carter = () => {
         description={t("carter.description")}
         charname="Carter"
         nickname="Proximtas"
-        active1="Inactive"
+        active1={t("status.status2")}
         birthday="1998"
         aliases1="Proxy"
         age="26"
         birthplace="Buenos Aires"
         nationality="Latin/American"
-        gender="Male"
+        gender={t("status.gender1")}
       ></Wiki>
       <Footer></Footer>
     </Transition>

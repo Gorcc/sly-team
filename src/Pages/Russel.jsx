@@ -3,7 +3,7 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Wiki from "../Components/Wiki";
 import Transition from "../transitions/transition";
-import charImg from "../Assets/AVATAR/russel1.png";
+import charImg from "../Assets/AVATAR/russel1.webp";
 import { useTranslation } from "react-i18next";
 
 const Russel = () => {
@@ -39,13 +39,13 @@ const Russel = () => {
         reason={t("russel.10")}
         goals={t("russel.12")}
         
-        active1="Inactive"
+        active1={t("status.status2")}
         birthday="1999"
         aliases1="LG"
         age="25"
         birthplace="Los Santos"
-        nationality="USA"
-        gender="Male"
+        nationality={t("status.nationality1")}
+        gender={t("status.gender1")}
       ></Wiki>
       <Footer></Footer>
     </Transition>

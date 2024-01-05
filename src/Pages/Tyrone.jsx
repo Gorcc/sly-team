@@ -3,7 +3,7 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Wiki from "../Components/Wiki";
 import Transition from "../transitions/transition";
-import charImg from "../Assets/AVATAR/Mordredv1.png";
+import charImg from "../Assets/AVATAR/Mordredv1.webp";
 import { useTranslation } from "react-i18next";
 
 const Tyrone = () => {
@@ -25,7 +25,6 @@ const Tyrone = () => {
         contentCulture={t("wiki.9")}
         contentillegal={t("wiki.illegal")}
         contentReason={t("wiki.10")}
-        contentInfo={t("wiki.11")}
         contentGoals={t("wiki.12")}
         charname="Tyrone"
         nickname="Mordred"
@@ -41,13 +40,13 @@ const Tyrone = () => {
         illegal={t("tyrone.illegal")}
         reason={t("tyrone.10")}
         goals={t("tyrone.12")}
-        active="Alive"
+        active={t("status.status1")}
         birthday="1998"
         aliases1="T1"
         age="26"
         birthplace="East Compton"
-        nationality="USA"
-        gender="Male"
+        nationality={t("status.nationality1")}
+        gender={t("status.gender1")}
       ></Wiki>
       <Footer></Footer>
     </Transition>
