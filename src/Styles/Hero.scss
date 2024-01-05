@@ -85,6 +85,9 @@
 .animate {
   animation: heroAnim 3s ease 0s 1 normal forwards;
 }
+.animate {
+  animation: heroAnim2 3s ease 0s 1 normal forwards;
+}
 
 @keyframes heroAnim {
   0% {
@@ -97,10 +100,28 @@
     transform: translateX(0);
   }
 }
+@keyframes heroAnim2 {
+  0% {
+    opacity: 0;
+   
+  }
+
+  100% {
+    opacity: 1;
+   
+  }
+}
 @media screen and (max-width: 1000px) {
+
 .content-wrap{
   left: 50%;
   transform: translateX(-50%);
+  width: 300px;
+
+
+  h1{
+    font-size: 16px;
+  }
 }
 
 

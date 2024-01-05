@@ -4,11 +4,22 @@ import { useState, useEffect } from "react";
 
 import { useTranslation } from "react-i18next";
 import "../Styles/Hero.scss";
+import { faL } from "@fortawesome/free-solid-svg-icons";
 
 const Hero = () => {
+  const [width, setWidth] = useState(window.innerWidth);
 
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
 
-
+  const isMobile = width <= 768;
 
   const [language, setLanguage] = useState("en");
   const [t, i18n] = useTranslation("global");
@@ -18,18 +29,19 @@ const Hero = () => {
   useEffect(() => {
     setIsAnimated(true);
   }, []);
-  
+
   const Texts = [
     t("home.learn"),
     t("home.check"),
     t("home.race"),
-    t("home.drift")
-
+    t("home.drift"),
   ];
-  const BtnTexts = [ t("home.learn1"),
-  t("home.check1"),
-  t("home.race1"),
-  t("home.drift1")];
+  const BtnTexts = [
+    t("home.learn1"),
+    t("home.check1"),
+    t("home.race1"),
+    t("home.drift1"),
+  ];
   const [contentIndex, setContentIndex] = useState(0);
   const [btnIndex, setbtnIndex] = useState(0);
   const [animate, setAnimate] = useState(true);
@@ -39,6 +51,9 @@ const Hero = () => {
       setContentIndex((prevIndex) => (prevIndex + 1) % Texts.length);
       setbtnIndex((prevIndex) => (prevIndex + 1) % BtnTexts.length);
       setAnimate(true);
+      if(isMobile){
+        setAnimate(false);
+      }
     }, 10000);
 
     return () => clearTimeout(timeoutId);
@@ -47,7 +62,6 @@ const Hero = () => {
   const onAnimationEnd = () => {
     setAnimate(false);
   };
-
 
   useEffect(() => {
     switch (btnIndex) {
@@ -69,7 +83,12 @@ const Hero = () => {
   }, [btnIndex]);
   return (
     <div className="main">
-      <video src="https://res.cloudinary.com/dvi8iejpx/video/upload/v1704403324/Herovid_-_Trim_f6jca3.mp4" autoPlay loop muted></video>
+      <video
+        src="https://res.cloudinary.com/dvi8iejpx/video/upload/v1704403324/Herovid_-_Trim_f6jca3.mp4"
+        autoPlay
+        loop
+        muted
+      ></video>
       <div
         className={`content ${animate ? "animate" : ""}`}
         onAnimationEnd={onAnimationEnd}
@@ -79,8 +98,12 @@ const Hero = () => {
           <a href={page}>{BtnTexts[btnIndex]}</a>
         </div>
       </div>
-    <h5 className="server-text">{t("header.current-server")}&nbsp;<strong>Full Boost Drift</strong></h5>
-    <h5 className="server-text">{t("header.current-server1")}&nbsp;<strong>Venny Roleplay</strong></h5>
+      <h5 className="server-text">
+        {t("header.current-server")}&nbsp;<strong>Full Boost Drift</strong>
+      </h5>
+      <h5 className="server-text">
+        {t("header.current-server1")}&nbsp;<strong>Venny Roleplay</strong>
+      </h5>
     </div>
   );
 };
