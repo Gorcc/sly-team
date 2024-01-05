@@ -80,6 +80,7 @@ const Hero = () => {
         </div>
       </div>
     <h5>{t("header.current-server")}</h5>
+    <h5>{t("header.current-server1")}</h5>
     </div>
   );
 };
