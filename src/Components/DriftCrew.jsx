@@ -17,6 +17,7 @@ import DivoImg from "../Assets/DRIFTCREW/Divoras (Trainee)/310021024_12607753354
 import MordredImg from "../Assets/DRIFTCREW/Mordred (Trainee)/desktop-wallpaper-sebastia-vettel-poster-motorsport-f1-sebastianvettel.webp";
 import ProxImg from "../Assets/DRIFTCREW/Proximtas (Trainee/IMG_1765.webp";
 import LerbImg from "../Assets/DRIFTCREW/Lerbtw (Trainee)/4212WaoIZZk.webp";
+import mxviImg from "../Assets/DRIFTCREW/pppp.webp"
 
 import "../Styles/DriftCrew.scss";
 
@@ -129,6 +130,14 @@ const DriftCrew = () => {
           <div className="d-info">
             <img  className="logo-img" src={SlyLogo} alt="" />
             <h1>Proximtas</h1>
+            <img  className="logo-img" src={TurkishFlag} alt="" />
+          </div>
+        </div>
+        <div className="member ">
+          <img src={mxviImg} className="drift-img" alt="" />
+          <div className="d-info">
+            <img  className="logo-img" src={SlyLogo} alt="" />
+            <h1>MSxVI</h1>
             <img  className="logo-img" src={TurkishFlag} alt="" />
           </div>
         </div>

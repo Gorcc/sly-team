@@ -6,7 +6,7 @@ import { faGlobe, faX } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
-import slyLogo from "../Styles/TEAMSLY.png";
+import slyLogo from "../Styles/slylogo.svg";
 
 const Header = (props) => {
   const [language, setLanguage] = useState("tr");

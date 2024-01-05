@@ -8,19 +8,16 @@
   position: relative;
   z-index: 9999;
   width: 100%;
-
- 
 }
 
-.header-border{
+.header-border {
   border-bottom: 3px solid white;
 }
 
-
-
 .header-container img {
   display: flex;
-  width: 180px;
+  width: 60px;
+  margin: 12px 32px;
   align-self: flex-end;
 }
 
@@ -74,16 +71,14 @@ ul {
   background-color: black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 0;
-
 }
-.dropdown-wrapper{
+.dropdown-wrapper {
   transition: 0.3s all ease;
 }
 .dropdown li {
   padding: 12px;
   display: flex;
   z-index: 9999999999;
- 
 }
 
 .dropdown a {
@@ -92,50 +87,49 @@ ul {
   display: flex;
 }
 
-
 .dropdown-wrapper:hover .dropdown {
   display: block;
 }
 
-.header-list{
+.header-list {
   width: auto;
   max-width: 100%;
-  
+
   white-space: nowrap;
-  
+
   transition: all 2s linear;
 }
 
-.animate-header{
+.animate-header {
   opacity: 1;
   max-width: 100%;
-  
 }
 
-
-
-.mobile-container{
+.mobile-container {
   position: relative;
   z-index: 999;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+padding: 12px 0;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid white;
-  padding: 12px;
-  img{
-    width: 100px;
+
+  img {
+    width: 35px;
+    margin: 0;
+    margin-left: 24px;
   }
 
-  svg{
+  svg {
     width: 24px;
     height: 24px;
+    margin-right: 24px;
   }
 }
 
-
-.right-bar{
+.right-bar {
   padding: 12px;
   display: flex;
   flex-direction: column;
@@ -150,12 +144,11 @@ ul {
   transition: 0.3s all ease;
   animation: myAnim 0.5s ease 0s 1 normal forwards;
 
-  svg{
+  svg {
     height: 24px;
   }
 
-
-  .mobile-header{
+  .mobile-header {
     margin: 0;
     padding: 0;
     display: flex;
@@ -163,17 +156,17 @@ ul {
     align-items: center;
     justify-content: center;
 
-    li{
+    li {
       margin: 12px;
       text-align: center;
     }
 
-    a{
+    a {
       text-transform: uppercase;
-      font-family: 'MonumentExtended', sans-serif;
+      font-family: "MonumentExtended", sans-serif;
       border-bottom: none;
     }
-    button{
+    button {
       margin-top: 12px;
       display: flex;
       align-items: center;
@@ -183,13 +176,13 @@ ul {
 }
 
 @keyframes myAnim {
-	0% {
-		width: 0px;
+  0% {
+    width: 0px;
     opacity: 0;
-	}
+  }
 
-	100% {
-		width: 150px;
+  100% {
+    width: 150px;
     opacity: 1;
-	}
+  }
 }
