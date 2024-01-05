@@ -87,17 +87,14 @@ const Media = () => {
           </div>
           <div className="media-left">
             <div className="images">
-              
               <div className="three-image">
-              <img src={Supra6} className="long-img" alt="" />
-              <div className="two-image">
-              <img  src={Supra1} alt="" />
-              <img src={Supra3} alt="" />
-              </div>
-             
+                <img src={Supra6} className="long-img" alt="" />
+                <div className="two-image">
+                  <img src={Supra1} alt="" />
+                  <img src={Supra3} alt="" />
+                </div>
               </div>
               <img className="full-img" src={Supra5} alt="" />
-              
             </div>
           </div>
         </div>
@@ -185,10 +182,10 @@ const Media = () => {
           </div>
           <div className="media-left">
             <div className="images">
-              <img src={S14_3} className="full-img" alt="" />
+              <img className="full-img" src={S14_4} alt="" />
               <img src={S14_1} alt="" />
               <img src={S14_2} alt="" />
-              <img className="full-img" src={S14_4} alt="" />
+              <img src={S14_3} className="full-img" alt="" />
             </div>
           </div>
         </div>
@@ -208,7 +205,7 @@ const Media = () => {
           </div>
         </div>
         <div className="media-div">
-        <div className="media-right">
+          <div className="media-right">
             <h1>
               Toyota Chaser JZX <br /> (Custom Body Kit.)
             </h1>
@@ -216,17 +213,14 @@ const Media = () => {
           </div>
           <div className="media-left">
             <div className="images">
-              
               <img className="full-img" src={Chaser4} alt="" />
               <img src={Chaser1} alt="" />
               <img src={Chaser2} alt="" />
               <img className="full-img" src={Chaser3} alt="" />
             </div>
           </div>
-          
         </div>
         <div className="media-div">
-        
           <div className="media-left">
             <div className="images">
               <img src={Vincet1} alt="" />

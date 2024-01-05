@@ -39,9 +39,9 @@ const Dante = () => {
         reason={t("dante.10")}
         goals={t("dante.12")}
         active={t("status.status1")}
-        birthday="-"
+        birthday="1997"
         aliases1="RB9"
-        age="-"
+        age="27"
         birthplace="Philadelphia"
         nationality={t("status.nationality1")}
         gender={t("status.gender1")}

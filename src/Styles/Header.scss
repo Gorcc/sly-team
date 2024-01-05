@@ -2,12 +2,15 @@
 @import url(./variables.css);
 
 .header-container {
+  position: fixed;
+  background-color: black;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   z-index: 9999;
   width: 100%;
+
 }
 
 .header-border {
@@ -19,6 +22,7 @@
   width: 60px;
   margin: 12px 32px;
   align-self: flex-end;
+  
 }
 
 ul {
@@ -106,11 +110,13 @@ ul {
 }
 
 .mobile-container {
-  position: relative;
+  position: fixed;
+  top: 0;
+  background-color: black;
   z-index: 999;
   width: 100%;
-padding: 12px 0;
-  
+  padding: 12px 0;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -134,7 +140,7 @@ padding: 12px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 150px;
   right: 0;

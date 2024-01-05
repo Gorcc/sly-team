@@ -79,8 +79,8 @@ const Hero = () => {
           <a href={page}>{BtnTexts[btnIndex]}</a>
         </div>
       </div>
-    <h5 className="server-text">{t("header.current-server")}</h5>
-    <h5 className="server-text">{t("header.current-server1")}</h5>
+    <h5 className="server-text">{t("header.current-server")}&nbsp;<strong>Full Boost Drift</strong></h5>
+    <h5 className="server-text">{t("header.current-server1")}&nbsp;<strong>Venny Roleplay</strong></h5>
     </div>
   );
 };
