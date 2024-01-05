@@ -16,11 +16,11 @@ import {
 } from "react-router-dom";
 import Media from "./Pages/Media";
 import { AnimatePresence } from "framer-motion";
-const storedLanguage = localStorage.getItem("language");
+
 
 i18next.init({
   interpolaration: { escapeValue: true },
-  lng: storedLanguage,
+  lng: "tr",
   resources: {
     en: {
       global: global_en,

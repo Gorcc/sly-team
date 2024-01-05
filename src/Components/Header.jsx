@@ -43,7 +43,7 @@ const Header = (props) => {
     i18n.changeLanguage(newLanguage);
   };
   useEffect(() => {
-    localStorage.setItem("language", language);
+   
   }, [language]);
   if (isMobile) {
     return (
