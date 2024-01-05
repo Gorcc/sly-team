@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 
 import { useTranslation } from "react-i18next";
 import "../Styles/Hero.scss";
-import { faL } from "@fortawesome/free-solid-svg-icons";
 
 const Hero = () => {
   const [width, setWidth] = useState(window.innerWidth);
