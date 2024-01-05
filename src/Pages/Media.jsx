@@ -77,8 +77,10 @@ const Media = () => {
     setShowModal(false);
   };
   return (
+    <>
+    <Header></Header>
     <Transition>
-      <Header></Header>
+      
       <div className="media-container">
         <div className="media-div">
           <div className="media-right">
@@ -236,6 +238,7 @@ const Media = () => {
       </div>
       <Footer></Footer>
     </Transition>
+    </>
   );
 };
 

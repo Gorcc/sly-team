@@ -9,8 +9,10 @@ import { useTranslation } from "react-i18next";
 const BenNao = () => {
   const [t, i18n] = useTranslation("global");
   return (
+    <>
+    <Header></Header>
     <Transition>
-      <Header></Header>
+      
       <Wiki
         image={charImg}
         color="#fa6f06"
@@ -49,6 +51,7 @@ const BenNao = () => {
       ></Wiki>
       <Footer></Footer>
     </Transition>
+    </>
   );
 };
 

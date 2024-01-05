@@ -7,11 +7,14 @@ import DriftCrew from "../Components/DriftCrew";
 
 const DRCrew = () => {
   return (
+    <>
+    <Header></Header>
     <Transition>
-      <Header></Header>
+     
       <DriftCrew></DriftCrew>
       <Footer></Footer>
     </Transition>
+    </>
   );
 };
 

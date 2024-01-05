@@ -96,9 +96,11 @@ const Images = () => {
     };
   }, []);
   return (
+    <>
+    <Header></Header>
     <Transition>
-      <>
-        <Header></Header>
+    
+       
         {loading && (
           <div className="loading">
             <h1>Loading Images</h1>
@@ -233,9 +235,10 @@ const Images = () => {
             </div>
           </div>
         </div>
-      </>
+      
       <Footer></Footer>
     </Transition>
+    </>
   );
 };
 

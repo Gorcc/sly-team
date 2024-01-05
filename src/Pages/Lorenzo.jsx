@@ -9,8 +9,10 @@ import { useTranslation } from "react-i18next";
 const Lorenzo = () => {
   const [t, i18n] = useTranslation("global");
   return (
+    <>
+    <Header></Header>
     <Transition>
-      <Header></Header>
+      
       <Wiki
         image={LorenzoImg}
         color="#8642da"
@@ -55,6 +57,7 @@ const Lorenzo = () => {
       ></Wiki>
       <Footer></Footer>
     </Transition>
+    </>
   );
 };
 

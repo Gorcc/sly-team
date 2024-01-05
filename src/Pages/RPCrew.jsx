@@ -28,8 +28,10 @@ const RPCrew = () => {
     }
   }, [isTimerActive]);
   return (
+    <>
+    <Header></Header>
     <Transition>
-      <Header></Header>
+      
       <div
         className={isTimerActive ? "rp-container bg-glitch" : "rp-container"}
       >
@@ -167,6 +169,7 @@ const RPCrew = () => {
       </div>
       <Footer></Footer>
     </Transition>
+    </>
   );
 };
 

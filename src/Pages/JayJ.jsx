@@ -9,8 +9,10 @@ import { useTranslation } from "react-i18next";
 const JayJ = () => {
   const [t, i18n] = useTranslation("global");
   return (
+    <>
+    <Header></Header>
     <Transition>
-      <Header></Header>
+      
       <Wiki
         image={charImg}
         color="#fc14ff"
@@ -28,6 +30,7 @@ const JayJ = () => {
       ></Wiki>
       <Footer></Footer>
     </Transition>
+    </>
   );
 };
 

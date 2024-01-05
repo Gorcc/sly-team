@@ -9,8 +9,10 @@ import SocialLinks from "../Components/SocialLinks"
 const About = () => {
   const [t, i18n] = useTranslation("global");
   return (
+    <>
+    <Header></Header>
     <Transition>
-        <Header></Header>
+        
     <div className="about-container">
         
       <h1>{t("about.header")}</h1>
@@ -20,6 +22,7 @@ const About = () => {
     
     <Footer className="bottom-page"></Footer>
     </Transition>
+    </>
   );
 };
 

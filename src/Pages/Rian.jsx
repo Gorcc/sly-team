@@ -9,8 +9,10 @@ import { useTranslation } from "react-i18next";
 const Rian = () => {
   const [t, i18n] = useTranslation("global");
   return (
-    <Transition>
+    <>
       <Header></Header>
+    <Transition>
+    
       <Wiki
         blur={true}
         image={RianImg}
@@ -39,6 +41,7 @@ const Rian = () => {
       ></Wiki>
       <Footer></Footer>
     </Transition>
+    </>
   );
 };
 

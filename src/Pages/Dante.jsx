@@ -9,8 +9,10 @@ import { useTranslation } from "react-i18next";
 const Dante = () => {
   const [t, i18n] = useTranslation("global");
   return (
+    <>
+    <Header></Header>
     <Transition>
-      <Header></Header>
+      
       <Wiki
         image={charImg}
         color="#1b6e00"
@@ -48,6 +50,7 @@ const Dante = () => {
       ></Wiki>
       <Footer></Footer>
     </Transition>
+    </>
   );
 };
 

@@ -9,8 +9,10 @@ import { useTranslation } from "react-i18next";
 const Russel = () => {
   const [t, i18n] = useTranslation("global");
   return (
+    <>
+    <Header></Header>
     <Transition>
-      <Header></Header>
+    
       <Wiki
         image={charImg}
         color="#1b6e00"
@@ -49,6 +51,7 @@ const Russel = () => {
       ></Wiki>
       <Footer></Footer>
     </Transition>
+    </>
   );
 };
 

@@ -9,8 +9,10 @@ import { useTranslation } from "react-i18next";
 const Carter = () => {
   const [t, i18n] = useTranslation("global");
   return (
+    <>
+    <Header></Header>
     <Transition>
-      <Header></Header>
+    
       <Wiki
         image={charImg}
         color="#39b7b8"
@@ -28,6 +30,7 @@ const Carter = () => {
       ></Wiki>
       <Footer></Footer>
     </Transition>
+    </>
   );
 };
 

@@ -26,7 +26,7 @@ const DriftCrew = () => {
     <div className="dcrew-container">
       <h1 className="dcrew-header">Team Leader</h1>
 
-      <div className="leader">
+      <div className="leader border-bottom">
         <img src={LorenzoImg} className="drift-img" alt="" />
         <div className="d-info">
           <img src={SlyLogo} className="logo-img" alt="" />
@@ -35,7 +35,7 @@ const DriftCrew = () => {
         </div>
       </div>
       <h1 className="dcrew-header">Management</h1>
-      <div className="management">
+      <div className="management border-bottom">
        
         <div className="member">
           <img src={RyuImg} className="drift-img" alt="" />
@@ -63,7 +63,7 @@ const DriftCrew = () => {
         </div>
       </div>
       <h1 className="dcrew-header">Team Members</h1>
-      <div className="team-members">
+      <div className="team-members border-bottom">
         <div className="member">
           <img src={hTuneImg} className="drift-img" alt="" />
           <div className="d-info">
@@ -143,8 +143,8 @@ const DriftCrew = () => {
         </div>
      
       </div>
-      <h1 className="dcrew-header">Designer</h1>
-      <div className="designer">
+      <h1 className="dcrew-header ">Designer</h1>
+      <div className="designer border-bottom">
         <div className="member">
           <img src={DivoImg} className="drift-img" alt="" />
           <h1>Divoras</h1>

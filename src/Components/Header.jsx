@@ -7,6 +7,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import {ReactComponent as ReactLogo} from '../Styles/slylogo.svg';
+import Transition from "../transitions/transitionleft"
 const Header = (props) => {
   const [language, setLanguage] = useState("tr");
   const [t, i18n] = useTranslation("global");
@@ -107,6 +108,7 @@ const Header = (props) => {
   }
 
   return (
+  
     <div
       className={
         isVideos ? "header-container" : "header-container header-border"
@@ -161,6 +163,7 @@ const Header = (props) => {
         </button>
       </ul>
     </div>
+   
   );
 };
 

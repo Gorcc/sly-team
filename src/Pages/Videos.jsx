@@ -7,8 +7,10 @@ import YouTube, { YouTubeProps } from "react-youtube";
 
 const Videos = () => {
   return (
+    <>
+        <Header videos={true}></Header>
     <Transition>
-      <Header videos={true}></Header>
+  
       <div className="videos-container">
         <div className="videos-left">
           <h1>Drift Edits</h1>
@@ -115,6 +117,7 @@ const Videos = () => {
       </div>
       <Footer></Footer>
     </Transition>
+    </>
   );
 };
 
