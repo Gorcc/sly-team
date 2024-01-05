@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import global_en from "./translations/en/global.json";
+
 import global_tr from "./translations/tr/globa.json";
 import i18next from "i18next";
 import { I18nextProvider } from "react-i18next";
@@ -23,9 +24,11 @@ i18next.init({
   resources: {
     en: {
       global: global_en,
+
     },
     tr: {
       global: global_tr,
+ 
     },
   },
 });

@@ -5,7 +5,7 @@
   align-items: center;
 
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   &.hidden {
     display: none;
   }
@@ -25,12 +25,16 @@
 .img-div {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  
+  
 }
 
 .images-wrap {
   margin-bottom: 12px;
   margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .images-container img {
   object-fit: cover;
@@ -46,6 +50,7 @@
   width: 33.15%;
 }
 .images-container .full-img {
-  width: 100%;
-  height: auto;
+  width: 1200px;
+  height: 500px;
+  object-fit: contain;
 }
