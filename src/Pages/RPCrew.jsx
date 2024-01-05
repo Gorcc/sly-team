@@ -33,12 +33,17 @@ const RPCrew = () => {
       <div
         className={isTimerActive ? "rp-container bg-glitch" : "rp-container"}
       >
+        <div className="bg-glitch hidden"></div>
         <div className="rp-card">
           <a href="/lorenzo">
             <div
               className={`rp-img lorenzo ${isTimerActive ? "hover" : ""}`}
             ></div>
             <h2>Lorenzo</h2>
+            <div
+              className={`rp-img lorenzo hover hidden`}
+            ></div>
+          
           </a>
         </div>
 
@@ -48,8 +53,12 @@ const RPCrew = () => {
               <div
                 className={`rp-img dave ${isTimerActive ? "hover" : ""}`}
               ></div>
+               <h2>Dave</h2>
+               <div
+              className={`rp-img dave hover hidden`}
+            ></div>
 
-              <h2>Dave</h2>
+             
             </a>
           </div>
 
@@ -58,7 +67,11 @@ const RPCrew = () => {
             <div
               className={`rp-img rian ${isTimerActive ? "hover" : ""}`}
             ></div>
-            <h2>Rian</h2>
+                  <h2>Rian</h2>
+             <div
+              className={`rp-img rian hover hidden`}
+            ></div>
+      
             </a>
           </div>
         </div>
@@ -68,7 +81,11 @@ const RPCrew = () => {
             <div
               className={`rp-img tyrone ${isTimerActive ? "hover" : ""}`}
             ></div>
-            <h2>Tyrone</h2></a>
+              <h2>Tyrone</h2>
+             <div
+              className={`rp-img tyrone hover hidden`}
+            ></div>
+          </a>
           </div>
 
           <div className="rp-card">
@@ -76,7 +93,11 @@ const RPCrew = () => {
             <div
               className={`rp-img dante ${isTimerActive ? "hover" : ""}`}
             ></div>
-            <h2>Dante</h2>
+                  <h2>Dante</h2>
+             <div
+              className={`rp-img dante hover hidden`}
+            ></div>
+      
             </a>
           </div>
           <div className="rp-card">
@@ -84,7 +105,11 @@ const RPCrew = () => {
             <div
               className={`rp-img loid ${isTimerActive ? "hover" : ""}`}
             ></div>
-            <h2>Loid</h2>
+             <h2>Loid</h2>
+             <div
+              className={`rp-img loid hover hidden`}
+            ></div>
+           
             </a>
           </div>
         </div>
@@ -94,7 +119,11 @@ const RPCrew = () => {
             <div
               className={`rp-img bennao ${isTimerActive ? "hover" : ""}`}
             ></div>
-            <h2>Ben Nao</h2>
+                 <h2>Ben Nao</h2>
+             <div
+              className={`rp-img bennao hover hidden`}
+            ></div>
+       
             </a>
           </div>
 
@@ -103,7 +132,11 @@ const RPCrew = () => {
             <div
               className={`rp-img carter ${isTimerActive ? "hover" : ""}`}
             ></div>
-            <h2>Carter</h2>
+               <h2>Carter</h2>
+             <div
+              className={`rp-img carter hover hidden`}
+            ></div>
+         
             </a>
           </div>
           <div className="rp-card">
@@ -111,7 +144,11 @@ const RPCrew = () => {
             <div
               className={`rp-img jayj ${isTimerActive ? "hover" : ""}`}
             ></div>
-            <h2>Jay J</h2>
+              <h2>Jay J</h2>
+             <div
+              className={`rp-img jayj hover hidden`}
+            ></div>
+          
             </a>
           </div>
           <div className="rp-card">
@@ -119,7 +156,11 @@ const RPCrew = () => {
             <div
               className={`rp-img russel ${isTimerActive ? "hover" : ""}`}
             ></div>
-            <h2>Russel</h2>
+             <h2>Russel</h2>
+             <div
+              className={`rp-img russel hover hidden`}
+            ></div>
+           
             </a>
           </div>
         </div>
