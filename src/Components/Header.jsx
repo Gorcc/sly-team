@@ -41,9 +41,10 @@ const Header = (props) => {
     const newLanguage = language === "en" ? "tr" : "en";
     setLanguage(newLanguage);
     i18n.changeLanguage(newLanguage);
-    localStorage.setItem("language", language);
   };
-
+  useEffect(() => {
+    localStorage.setItem("language", language);
+  }, [language]);
   if (isMobile) {
     return (
       <>
