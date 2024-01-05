@@ -98,7 +98,7 @@ const Hero = () => {
         </div>
       </div>
       <h5 className="server-text">
-        {t("header.current-server")}&nbsp;<strong>Full Boost Drift</strong>
+        {t("header.current-server")}&nbsp;<strong>FullBoost Drift</strong>
       </h5>
       <h5 className="server-text">
         {t("header.current-server1")}&nbsp;<strong>Venny Roleplay</strong>
