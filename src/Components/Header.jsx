@@ -6,8 +6,7 @@ import { faGlobe, faX } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
-import slyLogo from "../Styles/slylogo.svg";
-
+import {ReactComponent as ReactLogo} from '../Styles/slylogo.svg';
 const Header = (props) => {
   const [language, setLanguage] = useState("tr");
   const [t, i18n] = useTranslation("global");
@@ -51,7 +50,7 @@ const Header = (props) => {
         <div className="mobile-container">
           <div className="logo">
             <a href="/">
-              <img src={slyLogo} alt="Logo" />
+              <ReactLogo className="logo-img"></ReactLogo>
             </a>
           </div>
           <FontAwesomeIcon
@@ -115,7 +114,7 @@ const Header = (props) => {
     >
       <div className="logo">
         <a href="/">
-          <img src={slyLogo} alt="Logo" />
+        <ReactLogo className="logo-img"></ReactLogo>
         </a>
       </div>
       <ul className={isAnimated ? "header-list" : "header-list"}>

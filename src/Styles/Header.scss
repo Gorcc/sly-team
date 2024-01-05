@@ -17,9 +17,10 @@
   border-bottom: 3px solid white;
 }
 
-.header-container img {
+.header-container .logo-img {
   display: flex;
   width: 60px;
+  height: 60px;
   margin: 12px 32px;
   align-self: flex-end;
   
@@ -122,8 +123,9 @@ ul {
   align-items: center;
   border-bottom: 1px solid white;
 
-  img {
+  .logo-img {
     width: 35px;
+    height: 35px;
     margin: 0;
     margin-left: 24px;
   }
