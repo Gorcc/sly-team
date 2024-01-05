@@ -33,7 +33,7 @@ const RPCrew = () => {
       <div
         className={isTimerActive ? "rp-container bg-glitch" : "rp-container"}
       >
-        <div className="bg-glitch hidden"></div>
+        <div className="bg-glitch"></div>
         <div className="rp-card">
           <a href="/lorenzo">
             <div

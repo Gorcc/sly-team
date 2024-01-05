@@ -59,6 +59,8 @@ import Image55 from "../Assets/Images/Temmuz in the playground Tandem Practice i
 import { useState } from "react";
 
 import Transition from "../transitions/transition";
+import { useEffect } from "react";
+import Footer from "../Components/Footer";
 
 const Images = () => {
   const [loading, setLoading] = useState(true);
@@ -66,6 +68,34 @@ const Images = () => {
   const handleImageLoad = () => {
     setLoading(false);
   };
+
+  useEffect(() => {
+    const images = document.querySelectorAll('.full-img');
+    const totalImages = images.length;
+
+    let loadedImages = 0;
+
+    const handleLazyLoad = () => {
+      loadedImages++;
+      if (loadedImages === totalImages) {
+        setLoading(false);
+      }
+    };
+
+    images.forEach((image) => {
+      if ('loading' in HTMLImageElement.prototype) {
+        image.loading = 'lazy';
+      } else {
+        image.addEventListener('load', handleLazyLoad);
+      }
+    });
+
+    return () => {
+      images.forEach((image) => {
+        image.removeEventListener('load', handleLazyLoad);
+      });
+    };
+  }, []);
   return (
     <Transition>
       <>
@@ -205,6 +235,7 @@ const Images = () => {
           </div>
         </div>
       </>
+      <Footer></Footer>
     </Transition>
   );
 };
