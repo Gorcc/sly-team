@@ -119,7 +119,7 @@ const Images = () => {
           <div className="img-div">
             <h3 className="img-header header-right">Hanging Out</h3>
             <div className="images-wrap">
-              <img src={Image3} className="full-img border" alt="" onLoad={handleImageLoad} />
+              <img src={Image3} className="full-img" alt="" onLoad={handleImageLoad} />
               <img src={Image4} className="full-img" alt="" onLoad={handleImageLoad} />
               <img src={Image5} className="full-img" alt="" onLoad={handleImageLoad} />
             </div>
