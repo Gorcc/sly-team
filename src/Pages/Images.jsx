@@ -56,13 +56,32 @@ import Image53 from "../Assets/Images/Temmuz 2023 Tandem practice in RP/image.we
 import Image54 from "../Assets/Images/Temmuz in the playground Tandem Practice in RP/111.webp";
 import Image55 from "../Assets/Images/Temmuz in the playground Tandem Practice in RP/222.webp";
 import { useState } from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import Transition from "../transitions/transition";
 import { useEffect } from "react";
 import Footer from "../Components/Footer";
 
 const Images = () => {
   const [loading, setLoading] = useState(true);
+  const [bigImage,setBigImage] = useState(false);
+  const [clickedImg, setClickedImg] = useState("")
+  const handleClick = (event) => {
+    const src = event.target.src;
+    setBigImage(true)
+    setClickedImg(src)
+   
+  };
+  if (bigImage) {
+    document.documentElement.classList.add('no-scroll');
+  } else {
+    document.documentElement.classList.remove('no-scroll');
+  }
+  const handleClose = () => {
+
+    setBigImage(false)
+   
+  };
 
   const handleImageLoad = () => {
     setLoading(false);
@@ -99,7 +118,11 @@ const Images = () => {
     <>
     <Header></Header>
     <Transition>
-    
+    {bigImage ? <div className="fullscreen-img">
+         <img src={clickedImg} alt="" />
+          <FontAwesomeIcon className="close-icon" onClick={handleClose} icon={faXmark}></FontAwesomeIcon>
+        </div> : ""}
+     
        
         {loading && (
           <div className="loading">
@@ -107,122 +130,122 @@ const Images = () => {
             <div class="lds-hourglass"></div>
           </div>
         )}
-        <div className={`images-container ${loading ? "hidden" : ""}`}>
+       <div className={`images-container ${loading ? "hidden" : ""} ${bigImage ? "opacity" : ""}`}>
           <h1>IMAGES</h1>
           <div className="img-div">
             <h3 className="img-header">Practice at Red Rock</h3>
             <div className="images-wrap">
-              <img src={Image2} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image1} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img onClick={handleClick} src={Image2} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image1} className="full-img" alt="" onLoad={handleImageLoad} />
             </div>
           </div>
           <div className="img-div">
             <h3 className="img-header header-right">Hanging Out</h3>
             <div className="images-wrap">
-              <img src={Image3} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image4} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image5} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image3} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image4} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image5} className="full-img" alt="" onLoad={handleImageLoad} />
             </div>
           </div>
           <div className="img-div">
             <h3 className="img-header">Ren's Birthday Drifting at Night</h3>
             <div className="images-wrap">
-              <img src={Image6} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image7} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image6} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image7} className="full-img" alt="" onLoad={handleImageLoad} />
             </div>
           </div>
           <div className="img-div">
             <h3 className="img-header header-right">Mandem Gathering</h3>
             <div className="images-wrap">
-              <img src={Image16} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image9} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image15} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image11} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image12} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image13} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image14} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image8} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image16} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image9} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image15} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image11} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image12} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image13} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image14} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image8} className="full-img" alt="" onLoad={handleImageLoad} />
             </div>
           </div>
           <div className="img-div">
             <h3 className="img-header">Race Meeting</h3>
             <div className="images-wrap">
-              <img src={Image18} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image18} className="full-img" alt="" onLoad={handleImageLoad} />
             </div>
           </div>
           <div className="img-div">
             <h3 className="img-header header-right">Tandem Practice</h3>
             <div className="images-wrap">
-              <img src={Image19} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image20} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image19} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image20} className="full-img" alt="" onLoad={handleImageLoad} />
             </div>
           </div>
           <div className="img-div">
             <h3 className="img-header">Race 2</h3>
             <div className="images-wrap">
-              <img src={Image21} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image23} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image21} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image23} className="full-img" alt="" onLoad={handleImageLoad} />
             </div>
           </div>
           <div className="img-div">
             <h3 className="img-header header-right">Race & Club</h3>
             <div className="images-wrap">
-              <img src={Image24} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image25} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image26} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image24} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image25} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image26} className="full-img" alt="" onLoad={handleImageLoad} />
             </div>
           </div>
           <div className="img-div">
             <h3 className="img-header">Freestyle & Tandem in Drift Server</h3>
             <div className="images-wrap">
-              <img src={Image27} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image28} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image29} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image30} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image31} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image27} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image28} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image29} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image30} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image31} className="full-img" alt="" onLoad={handleImageLoad} />
             </div>
           </div>
           <div className="img-div">
             <h3 className="img-header header-right">Before Race Meeting</h3>
             <div className="images-wrap">
-              <img src={Image32} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image33} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image34} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image35} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image36} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image32} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image33} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image34} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image35} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image36} className="full-img" alt="" onLoad={handleImageLoad} />
             </div>
           </div>
           <div className="img-div">
             <h3 className="img-header">Pullover by the Cops During Tandem</h3>
             <div className="images-wrap">
-              <img src={Image37} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image38} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image39} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image37} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image38} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image39} className="full-img" alt="" onLoad={handleImageLoad} />
             </div>
           </div>
           <div className="img-div">
             <h3 className="img-header header-right">Racing Gather</h3>
             <div className="images-wrap">
-              <img src={Image43} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image44} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image45} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image43} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image44} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image45} className="full-img" alt="" onLoad={handleImageLoad} />
             </div>
           </div>
           <div className="img-div">
             <h3 className="img-header">Casually Cruisin</h3>
             <div className="images-wrap">
-              <img src={Image50} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image47} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image48} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image49} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image46} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image50} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image47} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image48} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image49} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image46} className="full-img" alt="" onLoad={handleImageLoad} />
             </div>
           </div>
           <div className="img-div">
             <h3 className="img-header header-right">Tandem Practice in RP</h3>
             <div className="images-wrap">
-              <img src={Image51} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image53} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image51} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image53} className="full-img" alt="" onLoad={handleImageLoad} />
             </div>
           </div>
           <div className="img-div">
@@ -230,8 +253,8 @@ const Images = () => {
               Playground, Tandem Practice
             </h3>
             <div className="images-wrap">
-              <img src={Image54} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img src={Image55} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image54} className="full-img" alt="" onLoad={handleImageLoad} />
+              <img  onClick={handleClick} src={Image55} className="full-img" alt="" onLoad={handleImageLoad} />
             </div>
           </div>
         </div>
