@@ -1,121 +1,126 @@
 @font-face {
-    font-family: 'MonumentExtended';
-    src: url('https://res.cloudinary.com/dvi8iejpx/raw/upload/v1704476274/MonumentExtended-Regular_dzhbyj.otf') format('truetype');
+  font-family: 'MonumentExtended';
+  src: url('https://res.cloudinary.com/dvi8iejpx/raw/upload/v1704476274/MonumentExtended-Regular_dzhbyj.otf') format('truetype');
 
-  }
+}
 
 h1,h2,h3,h4,a,span{
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
 
 html{
-    background-color: black;
-    color: white;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  
+}
+
+.no-scroll{
+overflow: hidden;
 }
 
 
 .header-container a{
-    font-family: 'MonumentExtended', sans-serif;
-    font-weight: normal;
+  font-family: 'MonumentExtended', sans-serif;
+  font-weight: normal;
 }
 
 .language-btn{
-    font-family: 'MonumentExtended', sans-serif !important;
+  font-family: 'MonumentExtended', sans-serif !important;
 }
 
 .loading{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    height: 70vh;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  height: 70vh;
   
+
 }
 .loading h1{
-    font-family: 'MonumentExtended', sans-serif;
+  font-family: 'MonumentExtended', sans-serif;
 }
 
 .lds-hourglass {
-    display: inline-block;
-    position: relative;
-    width: 80px;
-    height: 80px;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
   }
-  .lds-hourglass:after {
-    content: " ";
-    display: block;
-    border-radius: 50%;
-    width: 0;
-    height: 0;
-    margin: 8px;
-    box-sizing: border-box;
-    border: 32px solid #fff;
-    border-color: #fff transparent #fff transparent;
-    animation: lds-hourglass 1.2s infinite;
+  100% {
+    transform: scale(1);
   }
-  .lds-ellipsis {
-    display: inline-block;
-    position: relative;
-    width: 80px;
-    height: 80px;
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
   }
-  .lds-ellipsis div {
-    position: absolute;
-    top: 33px;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background: #fff;
-    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  100% {
+    transform: scale(0);
   }
-  .lds-ellipsis div:nth-child(1) {
-    left: 8px;
-    animation: lds-ellipsis1 0.6s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
-  .lds-ellipsis div:nth-child(2) {
-    left: 8px;
-    animation: lds-ellipsis2 0.6s infinite;
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-  .lds-ellipsis div:nth-child(3) {
-    left: 32px;
-    animation: lds-ellipsis2 0.6s infinite;
+  100% {
+    transform: rotate(1800deg);
   }
-  .lds-ellipsis div:nth-child(4) {
-    left: 56px;
-    animation: lds-ellipsis3 0.6s infinite;
-  }
-  @keyframes lds-ellipsis1 {
-    0% {
-      transform: scale(0);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  @keyframes lds-ellipsis3 {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(0);
-    }
-  }
-  @keyframes lds-hourglass {
-    0% {
-      transform: rotate(0);
-      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    }
-    50% {
-      transform: rotate(900deg);
-      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-    100% {
-      transform: rotate(1800deg);
-    }
-  }
+}

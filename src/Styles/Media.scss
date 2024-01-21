@@ -6,12 +6,16 @@
   width: 80%;
   margin-top: 90px;
 
-  h1{
-    font-family: 'MonumentExtended', sans-serif;
+  h1 {
+    font-family: "MonumentExtended", sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 24px;
   }
+}
+
+.opacity {
+  opacity: 0.2;
 }
 
 .media-div {
@@ -21,25 +25,22 @@
   width: 100%;
   margin-bottom: 40px;
   border-bottom: 3px solid var(--primary-purple);
-  
 }
 
-.three-image{
+.three-image {
   display: flex;
 
-
-  .long-img{
-    width: 80% !important; 
+  .long-img {
+    width: 80% !important;
     max-height: 600px;
   }
 }
 
-
-.two-image{
+.two-image {
   display: flex;
   flex-direction: column;
 
-  img{
+  img {
     width: 80% !important;
     max-height: 100%;
     height: 294px;
@@ -55,11 +56,10 @@
 .media-right {
   width: 20%;
   text-align: center;
-
 }
 .media-left img {
   width: 45.5%;
-  
+
   max-height: 420px;
   object-fit: cover;
   cursor: pointer;
@@ -80,36 +80,60 @@
   z-index: 100;
 }
 @media screen and (max-width: 1000px) {
-  .media-container{
+  .media-container {
     width: 100%;
   }
-  .media-div{
-    img{
-      
+  .media-div {
+    img {
       width: 100% !important;
       max-height: 100%;
     }
-    .media-left{
+    .media-left {
       flex-direction: column;
     }
- 
+
     flex-direction: column;
 
-    .media-right{
-      
+    .media-right {
       width: 90%;
       padding: 12px;
     }
 
-    .three-image{
+    .three-image {
       flex-direction: column;
 
-      img{
+      img {
         width: 100% !important;
       }
     }
-  
   }
+}
 
-  
+.fullscreen-img {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: center;
+
+  img {
+    margin-top: 24px;
+    width: 80%;
+    height: 80%;
+   
+    object-fit: contain;
+  }
+}
+
+.close-icon {
+  position: absolute;
+  margin-top: 12px;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(189, 0, 0, 0.652);
+  border-radius: 50%;
+  cursor: pointer;
 }

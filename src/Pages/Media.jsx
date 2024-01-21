@@ -50,11 +50,15 @@ import Supra6 from "../Cars/Supra/v3.webp";
 import Footer from "../Components/Footer";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Media = () => {
   const [language, setLanguage] = useState("en");
   const [t, i18n] = useTranslation("global");
   const [isAnimated, setIsAnimated] = useState(false);
+  const [bigImage,setBigImage] = useState(false);
+  const [clickedImg, setClickedImg] = useState("")
 
   useEffect(() => {
     setIsAnimated(true);
@@ -65,23 +69,34 @@ const Media = () => {
     i18n.changeLanguage(newLanguage);
   };
 
-  const [showModal, setShowModal] = useState(false);
-  const [showModalImg, setShowModalImg] = useState("");
   const handleClick = (event) => {
     const src = event.target.src;
-    setShowModalImg(src);
-    setShowModal(true);
+    setBigImage(true)
+    setClickedImg(src)
+   
+  };
+  if (bigImage) {
+    document.documentElement.classList.add('no-scroll');
+  } else {
+    document.documentElement.classList.remove('no-scroll');
+  }
+  const handleClose = () => {
+
+    setBigImage(false)
+   
   };
 
-  const closeModal = () => {
-    setShowModal(false);
-  };
+
   return (
     <>
     <Header></Header>
     <Transition>
-      
-      <div className="media-container">
+    {bigImage ? <div className="fullscreen-img">
+         <img src={clickedImg} alt="" />
+          <FontAwesomeIcon className="close-icon" onClick={handleClose} icon={faXmark}></FontAwesomeIcon>
+        </div> : ""}
+      <div className={bigImage ? "media-container opacity" : "media-container"}>
+        
         <div className="media-div">
           <div className="media-right">
             <h1>Jester 5 </h1>
@@ -90,13 +105,13 @@ const Media = () => {
           <div className="media-left">
             <div className="images">
               <div className="three-image">
-                <img src={Supra6} className="long-img" alt="" />
+                <img  onClick={handleClick} src={Supra6} className="long-img" alt="" />
                 <div className="two-image">
-                  <img src={Supra1} alt="" />
-                  <img src={Supra3} alt="" />
+                  <img onClick={handleClick} src={Supra1} alt="" />
+                  <img onClick={handleClick} src={Supra3} alt="" />
                 </div>
               </div>
-              <img className="full-img" src={Supra5} alt="" />
+              <img onClick={handleClick} className="full-img" src={Supra5} alt="" />
             </div>
           </div>
         </div>
@@ -104,8 +119,8 @@ const Media = () => {
           <div className="media-left">
             <div className="images">
               <img onClick={handleClick} src={Layer1} alt="" />
-              <img src={Layer2} alt="" />
-              <img className="full-img" src={Layer3} alt="" />
+              <img onClick={handleClick} src={Layer2} alt="" />
+              <img onClick={handleClick} className="full-img" src={Layer3} alt="" />
             </div>
           </div>
           <div className="media-right">
@@ -121,10 +136,10 @@ const Media = () => {
           </div>
           <div className="media-left">
             <div className="images">
-              <img src={Mazda2} alt="" />
-              <img src={Mazda1} alt="" />
-              <img src={Mazda3} alt="" />
-              <img src={Mazda4} alt="" />
+              <img onClick={handleClick} src={Mazda2} alt="" />
+              <img onClick={handleClick} src={Mazda1} alt="" />
+              <img onClick={handleClick} src={Mazda3} alt="" />
+              <img onClick={handleClick} src={Mazda4} alt="" />
             </div>
           </div>
         </div>
@@ -132,11 +147,11 @@ const Media = () => {
         <div className="media-div">
           <div className="media-left">
             <div className="images">
-              <img src={Elegy4} alt="" className="full-img" />
+              <img onClick={handleClick} src={Elegy4} alt="" className="full-img" />
 
-              <img src={Elegy1} alt="" />
-              <img src={Elegy2} alt="" />
-              <img className="full-img" src={Elegy3} alt="" />
+              <img onClick={handleClick} src={Elegy1} alt="" />
+              <img onClick={handleClick} src={Elegy2} alt="" />
+              <img onClick={handleClick} className="full-img" src={Elegy3} alt="" />
             </div>
           </div>
           <div className="media-right">
@@ -152,11 +167,11 @@ const Media = () => {
           </div>
           <div className="media-left">
             <div className="images">
-              <img src={Roxanne1} alt="" />
-              <img src={Roxanne2} alt="" />
-              <img className="full-img" src={Roxanne3} alt="" />
-              <img className="" src={Roxanne4} alt="" />
-              <img className="" src={Roxanne5} alt="" />
+              <img onClick={handleClick} src={Roxanne1} alt="" />
+              <img onClick={handleClick} src={Roxanne2} alt="" />
+              <img onClick={handleClick} className="full-img" src={Roxanne3} alt="" />
+              <img onClick={handleClick} className="" src={Roxanne4} alt="" />
+              <img onClick={handleClick} className="" src={Roxanne5} alt="" />
             </div>
           </div>
         </div>
@@ -164,11 +179,11 @@ const Media = () => {
         <div className="media-div">
           <div className="media-left">
             <div className="images">
-              <img src={Cefiro4} className="full-img" alt="" />
+              <img onClick={handleClick} src={Cefiro4} className="full-img" alt="" />
 
-              <img src={Cefiro1} alt="" />
-              <img src={Cefiro3} alt="" />
-              <img className="full-img" src={Cefiro2} alt="" />
+              <img onClick={handleClick} src={Cefiro1} alt="" />
+              <img onClick={handleClick} src={Cefiro3} alt="" />
+              <img onClick={handleClick} className="full-img" src={Cefiro2} alt="" />
             </div>
           </div>
           <div className="media-right">
@@ -184,21 +199,21 @@ const Media = () => {
           </div>
           <div className="media-left">
             <div className="images">
-              <img className="full-img" src={S14_4} alt="" />
-              <img src={S14_1} alt="" />
-              <img src={S14_2} alt="" />
-              <img src={S14_3} className="full-img" alt="" />
+              <img onClick={handleClick} className="full-img" src={S14_4} alt="" />
+              <img onClick={handleClick} src={S14_1} alt="" />
+              <img onClick={handleClick} src={S14_2} alt="" />
+              <img onClick={handleClick} src={S14_3} className="full-img" alt="" />
             </div>
           </div>
         </div>
         <div className="media-div">
           <div className="media-left">
             <div className="images">
-              <img className="full-img" src={Ferocid2} alt="" />
+              <img onClick={handleClick} className="full-img" src={Ferocid2} alt="" />
 
-              <img src={Ferocid5} className="full-img" alt="" />
-              <img src={Ferocid4} className="full-img" alt="" />
-              <img src={Ferocid3} alt="" className="full-img" />
+              <img onClick={handleClick} src={Ferocid5} className="full-img" alt="" />
+              <img onClick={handleClick} src={Ferocid4} className="full-img" alt="" />
+              <img onClick={handleClick} src={Ferocid3} alt="" className="full-img" />
             </div>
           </div>
           <div className="media-right">
@@ -215,19 +230,19 @@ const Media = () => {
           </div>
           <div className="media-left">
             <div className="images">
-              <img className="full-img" src={Chaser4} alt="" />
-              <img src={Chaser1} alt="" />
-              <img src={Chaser2} alt="" />
-              <img className="full-img" src={Chaser3} alt="" />
+              <img onClick={handleClick} className="full-img" src={Chaser4} alt="" />
+              <img onClick={handleClick} src={Chaser1} alt="" />
+              <img onClick={handleClick} src={Chaser2} alt="" />
+              <img onClick={handleClick} className="full-img" src={Chaser3} alt="" />
             </div>
           </div>
         </div>
         <div className="media-div">
           <div className="media-left">
             <div className="images">
-              <img src={Vincet1} alt="" />
-              <img src={Vincet2} alt="" />
-              <img className="full-img" src={Vincet4} alt="" />
+              <img onClick={handleClick} src={Vincet1} alt="" />
+              <img onClick={handleClick} src={Vincet2} alt="" />
+              <img onClick={handleClick} className="full-img" src={Vincet4} alt="" />
             </div>
           </div>
           <div className="media-right">

@@ -17,10 +17,10 @@ import {
 import Media from "./Pages/Media";
 import { AnimatePresence } from "framer-motion";
 
-
+const savedLanguage = sessionStorage.getItem("language") || "tr"; // Default to "tr" if not found
 i18next.init({
   interpolaration: { escapeValue: true },
-  lng: "tr",
+  lng: savedLanguage,
   resources: {
     en: {
       global: global_en,

@@ -39,7 +39,11 @@ const Header = (props) => {
   }, []);
   const handleLanguage = () => {
     const newLanguage = language === "en" ? "tr" : "en";
+  
+    sessionStorage.setItem("language", newLanguage);
+  
     setLanguage(newLanguage);
+  
     i18n.changeLanguage(newLanguage);
   };
   useEffect(() => {
