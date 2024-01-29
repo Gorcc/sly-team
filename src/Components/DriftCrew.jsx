@@ -18,7 +18,7 @@ import MordredImg from "../Assets/DRIFTCREW/Mordred (Trainee)/desktop-wallpaper-
 import ProxImg from "../Assets/DRIFTCREW/Proximtas (Trainee/IMG_1765.webp";
 import LerbImg from "../Assets/DRIFTCREW/Lerbtw (Trainee)/4212WaoIZZk.webp";
 import mxviImg from "../Assets/DRIFTCREW/pppp.webp"
-
+import SamaImg from "../Assets/sama.png"
 import "../Styles/DriftCrew.scss";
 
 const DriftCrew = () => {
@@ -104,6 +104,14 @@ const DriftCrew = () => {
             <img  className="logo-img" src={SlyLogo} alt="" />
             <h1>Orion</h1>
             <img  className="logo-img" src={USFlag} alt="" />
+          </div>
+        </div>
+        <div className="member">
+          <img src={SamaImg} className="drift-img" alt="" />
+          <div className="d-info">
+            <img  className="logo-img" src={SlyLogo} alt="" />
+            <h1>Sama</h1>
+            <img  className="logo-img" src={TurkishFlag} alt="" />
           </div>
         </div>
         
