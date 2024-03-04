@@ -20,6 +20,7 @@ import LerbImg from "../Assets/DRIFTCREW/Lerbtw (Trainee)/4212WaoIZZk.webp";
 import mxviImg from "../Assets/DRIFTCREW/pppp.webp"
 import SamaImg from "../Assets/sama.png"
 import "../Styles/DriftCrew.scss";
+import BRflag from "../Assets/flag-for-flag-bulgaria-svgrepo-com.svg"
 
 const DriftCrew = () => {
   return (
@@ -34,11 +35,19 @@ const DriftCrew = () => {
           <img src={TurkishFlag}   className="logo-img"alt="" />
         </div>
       </div>
-      {/* <h1 className="dcrew-header">Management</h1>
+      <h1 className="dcrew-header">Management</h1>
       <div className="management border-bottom">
+      <div className="member">
+          <img src={HaktanImg} className="drift-img" alt="" />
+          <div className="d-info">
+            <img  className="logo-img" src={SlyLogo} alt="" />
+            <h1>Haktan</h1>
+            <img  className="logo-img" src={TurkishFlag} alt="" />
+          </div>
+        </div>
        
        
-      </div> */}
+      </div>
       <h1 className="dcrew-header">Team Members</h1>
       <div className="team-members border-bottom">
       <div className="member">
@@ -81,7 +90,14 @@ const DriftCrew = () => {
             <img  className="logo-img" src={TurkishFlag} alt="" />
           </div>
         </div>
-       
+        <div className="member">
+          <img src="https://cdn.jsdelivr.net/gh/Gorcc/cdn@main/sly-team/hazer.png" className="drift-img" alt="" />
+          <div className="d-info">
+            <img  className="logo-img" src={SlyLogo} alt="" />
+            <h1>Hazer</h1>
+            <img  className="logo-img" src={BRflag} alt="" />
+          </div>
+        </div>
         <div className="member">
           <img src={GhostImg} className="drift-img" alt="" />
           <div className="d-info">
@@ -90,14 +106,7 @@ const DriftCrew = () => {
             <img  className="logo-img" src={POFlag} alt="" />
           </div>
         </div>
-        <div className="member">
-          <img src={HaktanImg} className="drift-img" alt="" />
-          <div className="d-info">
-            <img  className="logo-img" src={SlyLogo} alt="" />
-            <h1>Haktan</h1>
-            <img  className="logo-img" src={TurkishFlag} alt="" />
-          </div>
-        </div>
+        
         <div className="member">
           <img src={OrionImg} className="drift-img" alt="" />
           <div className="d-info">
