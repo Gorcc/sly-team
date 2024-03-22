@@ -106,27 +106,6 @@ const DriftCrew = () => {
             <img  className="logo-img" src={POFlag} alt="" />
           </div>
         </div>
-        
-        <div className="member">
-          <img src={OrionImg} className="drift-img" alt="" />
-          <div className="d-info">
-            <img  className="logo-img" src={SlyLogo} alt="" />
-            <h1>Orion</h1>
-            <img  className="logo-img" src={USFlag} alt="" />
-          </div>
-        </div>
-        <div className="member">
-          <img src={SamaImg} className="drift-img" alt="" />
-          <div className="d-info">
-            <img  className="logo-img" src={SlyLogo} alt="" />
-            <h1>Sama</h1>
-            <img  className="logo-img" src={TurkishFlag} alt="" />
-          </div>
-        </div>
-        
-      </div>
-      <h1 className="dcrew-header ">Team Trainees</h1>
-      <div className="team-trainees border-bottom">
         <div className="member">
           <img src={DivoImg} className="drift-img" alt="" />
           <div className="d-info">
@@ -152,11 +131,40 @@ const DriftCrew = () => {
             <img  className="logo-img" src={TurkishFlag} alt="" />
           </div>
         </div>
+        <div className="member">
+          <img src={OrionImg} className="drift-img" alt="" />
+          <div className="d-info">
+            <img  className="logo-img" src={SlyLogo} alt="" />
+            <h1>Orion</h1>
+            <img  className="logo-img" src={USFlag} alt="" />
+          </div>
+        </div>
+        <div className="member">
+          <img src={SamaImg} className="drift-img" alt="" />
+          <div className="d-info">
+            <img  className="logo-img" src={SlyLogo} alt="" />
+            <h1>Sama</h1>
+            <img  className="logo-img" src={TurkishFlag} alt="" />
+          </div>
+        </div>
+        
+      </div>
+      <h1 className="dcrew-header ">Team Trainees</h1>
+      
+      <div className="team-trainees border-bottom">
         <div className="member ">
           <img src={mxviImg} className="drift-img" alt="" />
           <div className="d-info">
             <img  className="logo-img" src={SlyLogo} alt="" />
             <h1>MSxVI</h1>
+            <img  className="logo-img" src={TurkishFlag} alt="" />
+          </div>
+        </div>
+        <div className="member ">
+          <img src="https://cdn.jsdelivr.net/gh/Gorcc/cdn@main/sly-team/synh.jpg" className="drift-img" alt="" />
+          <div className="d-info">
+            <img  className="logo-img" src={SlyLogo} alt="" />
+            <h1>Synh3x</h1>
             <img  className="logo-img" src={TurkishFlag} alt="" />
           </div>
         </div>
