@@ -106,31 +106,7 @@ const DriftCrew = () => {
             <img  className="logo-img" src={POFlag} alt="" />
           </div>
         </div>
-        <div className="member">
-          <img src={DivoImg} className="drift-img" alt="" />
-          <div className="d-info">
-            <img  className="logo-img" src={SlyLogo} alt="" />
-            <h1>Divoras</h1>
-            <img  className="logo-img" src={TurkishFlag} alt="" />
-          </div>
-        </div>
-        <div className="member">
-          <img src={MordredImg} className="drift-img" alt="" />
-          <div className="d-info">
-            <img  className="logo-img" src={SlyLogo} alt="" />
-            <h1>Mordred</h1>
-            <img  className="logo-img" src={TurkishFlag} alt="" />
-          </div>
-        </div>
-     
-        <div className="member ">
-          <img src={ProxImg} className="drift-img" alt="" />
-          <div className="d-info">
-            <img  className="logo-img" src={SlyLogo} alt="" />
-            <h1>Proximtas</h1>
-            <img  className="logo-img" src={TurkishFlag} alt="" />
-          </div>
-        </div>
+       
         <div className="member">
           <img src={OrionImg} className="drift-img" alt="" />
           <div className="d-info">
