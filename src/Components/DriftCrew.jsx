@@ -28,7 +28,7 @@ const DriftCrew = () => {
       <h1 className="dcrew-header">Team Leader</h1>
 
       <div className="leader border-bottom">
-        <img src={LorenzoImg} className="drift-img" alt="" />
+        <img src="https://cdn.jsdelivr.net/gh/Gorcc/cdn@main/sly-team/2dd90257b3aef2af441cc529f7ade404.png" className="drift-img" alt="" />
         <div className="d-info">
           <img src={SlyLogo} className="logo-img" alt="" />
           <h1>Midorin</h1>
@@ -160,7 +160,7 @@ const DriftCrew = () => {
           <h1>Thet</h1>
         </div>
         <div className="member">
-          <img src={LorenzoImg} className="drift-img" alt="" />
+          <img src="https://cdn.jsdelivr.net/gh/Gorcc/cdn@main/sly-team/2dd90257b3aef2af441cc529f7ade404.png" className="drift-img" alt="" />
           <h1>Midorin</h1>
         </div>
       </div>
