@@ -66,14 +66,7 @@ const DriftCrew = () => {
             <img  className="logo-img" src={TurkishFlag} alt="" />
           </div>
         </div>
-        <div className="member">
-          <img src={LerbImg} className="drift-img" alt="" />
-          <div className="d-info">
-            <img  className="logo-img" src={SlyLogo} alt="" />
-            <h1>Lerbtw</h1>
-            <img  className="logo-img" src={RUFlag} alt="" />
-          </div>
-        </div>
+       
         <div className="member">
           <img  src={KaiImg} className="drift-img" alt="" />
           <div className="d-info">
@@ -90,14 +83,7 @@ const DriftCrew = () => {
             <img  className="logo-img" src={TurkishFlag} alt="" />
           </div>
         </div>
-        <div className="member">
-          <img src="https://cdn.jsdelivr.net/gh/Gorcc/cdn@main/sly-team/hazer.png" className="drift-img" alt="" />
-          <div className="d-info">
-            <img  className="logo-img" src={SlyLogo} alt="" />
-            <h1>Hazer</h1>
-            <img  className="logo-img" src={BRflag} alt="" />
-          </div>
-        </div>
+      
         <div className="member">
           <img src={GhostImg} className="drift-img" alt="" />
           <div className="d-info">
@@ -136,14 +122,7 @@ const DriftCrew = () => {
             <img  className="logo-img" src={TurkishFlag} alt="" />
           </div>
         </div>
-        <div className="member ">
-          <img src="https://cdn.jsdelivr.net/gh/Gorcc/cdn@main/sly-team/synh.jpg" className="drift-img" alt="" />
-          <div className="d-info">
-            <img  className="logo-img" src={SlyLogo} alt="" />
-            <h1>Synh3x</h1>
-            <img  className="logo-img" src={TurkishFlag} alt="" />
-          </div>
-        </div>
+       
      
       </div>
       <h1 className="dcrew-header ">Designer</h1>
