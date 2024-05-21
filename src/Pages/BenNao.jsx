@@ -10,7 +10,8 @@ const BenNao = () => {
   const [t, i18n] = useTranslation("global");
   return (
     <>
-    <Header></Header>
+    
+    {/* <Header></Header>
     <Transition>
       
       <Wiki
@@ -50,7 +51,7 @@ const BenNao = () => {
         gender={t("status.gender1")}
       ></Wiki>
       <Footer></Footer>
-    </Transition>
+    </Transition> */}
     </>
   );
 };

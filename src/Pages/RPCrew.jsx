@@ -102,7 +102,7 @@ const RPCrew = () => {
             </div>
           </div>
           <div className="second-lane">
-            <div className="rp-card">
+            {/* <div className="rp-card">
               <a href="/bennao">
                 <div
                   className={`rp-img bennao ${isTimerActive ? "hover" : ""}`}
@@ -110,7 +110,7 @@ const RPCrew = () => {
                 <h2>Ben Nao</h2>
                 <div className={`rp-img bennao hover hidden`}></div>
               </a>
-            </div>
+            </div> */}
 
             <div className="rp-card">
               <a href="/carter">
