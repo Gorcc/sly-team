@@ -25,6 +25,10 @@
   width: 100%;
   margin-bottom: 40px;
   border-bottom: 3px solid var(--primary-purple);
+
+
+
+ 
 }
 
 .three-image {
@@ -36,6 +40,9 @@
   }
 }
 
+.two-image-side{
+  display: flex;
+}
 .two-image {
   display: flex;
   flex-direction: column;

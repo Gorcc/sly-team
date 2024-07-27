@@ -70,7 +70,7 @@ const Videos = () => {
             <iframe
               width="80%"
               height="315"
-              src="https://www.youtube.com/embed/3cHq21ve1_k?si=2TmrzqOmLPFJaW-_"
+              src="https://www.youtube.com/embed/Lsx4bPYJ_K4?si=D6QkGqawlYvJ7N3u"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -79,7 +79,7 @@ const Videos = () => {
             <iframe
               width="80%"
               height="315"
-              src="https://www.youtube.com/embed/iJnE85bCxMM?si=8m-RtyO1u3zv5hEF"
+              src="https://www.youtube.com/embed/YbOA219jiUM?si=3ntRT1UBYZWl4uCw"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -88,7 +88,7 @@ const Videos = () => {
             <iframe
               width="80%"
               height="315"
-              src="https://www.youtube.com/embed/ssaZhj-zMek?si=AZ17QBOGaNr7LmX9"
+              src="https://www.youtube.com/embed/PfFG7EggjZE?si=N3pSnqhaZWlj07fp"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -97,7 +97,7 @@ const Videos = () => {
             <iframe
               width="80%"
               height="315"
-              src="https://www.youtube.com/embed/hnji1dCsj4o?si=pxqEqhnI2ZYgg17K"
+              src="https://www.youtube.com/embed/_J-fMo-iHLc?si=FaS-7-iZ6HyCgSj6"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -106,7 +106,7 @@ const Videos = () => {
             <iframe
               width="80%"
               height="315"
-              src="https://www.youtube.com/embed/4219epvI58M?si=l1JY2Lg4vsA0Sky8"
+              src="https://www.youtube.com/embed/lcBJ2fYOuUE?si=RouSznwcRIf5K53g"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
