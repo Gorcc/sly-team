@@ -324,10 +324,10 @@ const Media = () => {
           </div>
           <div className="media-div">
             <div className="media-left">
-              <div className="images">
+              <div className="images ferocid-imgs">
                 <img
                   onClick={handleClick}
-                  className="full-img"
+                 
                   src={Ferocid2}
                   alt=""
                 />
@@ -335,20 +335,20 @@ const Media = () => {
                 <img
                   onClick={handleClick}
                   src={Ferocid5}
-                  className="full-img"
+                  
                   alt=""
                 />
                 <img
                   onClick={handleClick}
                   src={Ferocid4}
-                  className="full-img"
+                  
                   alt=""
                 />
                 <img
                   onClick={handleClick}
                   src={Ferocid3}
                   alt=""
-                  className="full-img"
+                  
                 />
               </div>
             </div>
