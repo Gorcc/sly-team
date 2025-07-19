@@ -82,12 +82,24 @@ const Hero = () => {
   }, [btnIndex]);
   return (
     <div className="main">
-      <video
-        src="https://res.cloudinary.com/dvi8iejpx/video/upload/v1704403324/Herovid_-_Trim_f6jca3.mp4"
-        autoPlay
-        loop
-        muted
-      ></video>
+      <iframe
+        src="https://www.youtube.com/embed/201n-vCi4IE?si=qETIciP-3zlObzX2&autoplay=1&mute=1&loop=1&playlist=201n-vCi4IE&controls=0&showinfo=0&rel=0&modestbranding=1"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+        style={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          width: '100vw',
+          height: '100vh',
+          transform: 'translate(-50%, -50%)',
+          pointerEvents: 'none',
+          zIndex: -1
+        }}
+      ></iframe>
       <div
         className={`content ${animate ? "animate" : ""}`}
         onAnimationEnd={onAnimationEnd}
