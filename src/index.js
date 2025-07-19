@@ -17,7 +17,7 @@ import {
 import Media from "./Pages/Media";
 import { AnimatePresence } from "framer-motion";
 
-const savedLanguage = sessionStorage.getItem("language") || "tr"; // Default to "tr" if not found
+const savedLanguage = sessionStorage.getItem("language") || "en"; // Default to "en" if not found
 i18next.init({
   interpolaration: { escapeValue: true },
   lng: savedLanguage,

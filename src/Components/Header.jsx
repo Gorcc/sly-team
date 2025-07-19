@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 import {ReactComponent as ReactLogo} from '../Styles/slylogo.svg';
 import Transition from "../transitions/transitionleft"
 const Header = (props) => {
-  const [language, setLanguage] = useState("tr");
+  const [language, setLanguage] = useState("en");
   const [t, i18n] = useTranslation("global");
   const [isAnimated, setIsAnimated] = useState(false);
   const isVideos = props.videos;

@@ -5,6 +5,7 @@ import Blog2 from "../Assets/Blog/m2.webp"
 import Blog3 from "../Assets/Blog/m3.webp"
 import Blog4 from "../Assets/Blog/m4.webp"
 import { useTranslation } from 'react-i18next'
+import SlyGif from "../Assets/slygif.gif"
 
 const Blog = () => {
 
@@ -16,7 +17,7 @@ const Blog = () => {
         <div className="blog-left">
             <img src={Blog1} alt="" />
             <img src={Blog2} alt="" />
-            <video src="https://res.cloudinary.com/dvi8iejpx/video/upload/v1704475989/M5_b8gduv.mp4" autoPlay loop muted className="blog-gif" alt="" />
+            <img src={SlyGif} className="blog-gif" alt="" />
             <img src={Blog3} alt="" />
             <img src={Blog4} alt="" />
         </div>

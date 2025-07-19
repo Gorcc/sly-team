@@ -32,10 +32,7 @@ import Ferocid2 from "../Cars/FEROCID1/2.webp";
 import Ferocid3 from "../Cars/FEROCID1/3.webp";
 import Ferocid4 from "../Cars/FEROCID1/4.webp";
 import Ferocid5 from "../Cars/FEROCID1/Snapinsta.app_382580254_18249221269204826_8876773228034451616_n_1080.webp";
-import Vincet1 from "../Cars/VINCENT1/1.webp";
-import Vincet2 from "../Cars/VINCENT1/2.webp";
-import Vincet3 from "../Cars/VINCENT1/3.webp";
-import Vincet4 from "../Cars/VINCENT1/4.webp";
+
 import Chaser1 from "../Cars/CHASER/1.webp";
 import Chaser2 from "../Cars/CHASER/2.webp";
 import Chaser3 from "../Cars/CHASER/JZX 100 v1.webp";
@@ -117,13 +114,11 @@ const Media = () => {
             </div>
             <div className="media-right">
               <h1>SCHLAGEN GT (STR)</h1>
-              <p>{t("cars.SCHLAGEN")}</p>
             </div>
           </div>
           <div className="media-div">
             <div className="media-right">
               <h1>S230</h1>
-              <p>{t("cars.S230")}</p>
             </div>
             <div className="media-left">
               <div className="images">
@@ -155,13 +150,11 @@ const Media = () => {
               <h1>
                 Ford Mustang <br /> (Dominator GT)
               </h1>
-              <p>{t("cars.DOMINATOR")}</p>
             </div>
           </div>
           <div className="media-div">
             <div className="media-right">
               <h1>Jester 5 </h1>
-              <p>{t("cars.SUPRA")}</p>
             </div>
             <div className="media-left">
               <div className="images">
@@ -201,14 +194,12 @@ const Media = () => {
             </div>
             <div className="media-right">
               <h1>Nissan Laurel C35</h1>
-              <p>{t("cars.C35")}</p>
             </div>
           </div>
 
           <div className="media-div">
             <div className="media-right">
               <h1>Mazda RX-7 FC </h1>
-              <p>{t("cars.MAZDA")}</p>
             </div>
             <div className="media-left">
               <div className="images">
@@ -250,14 +241,12 @@ const Media = () => {
             </div>
             <div className="media-right">
               <h1>Elegy RH7 (Lore Friendly)</h1>
-              <p>{t("cars.ELEGY")}</p>
             </div>
           </div>
 
           <div className="media-div">
             <div className="media-right">
               <h1>Roxanne (Lore Friendly)</h1>
-              <p>{t("cars.ROXANNE")}</p>
             </div>
             <div className="media-left">
               <div className="images">
@@ -294,14 +283,12 @@ const Media = () => {
             </div>
             <div className="media-right">
               <h1>Nissan Cefiro A31</h1>
-              <p>{t("cars.CEFIROO")}</p>
             </div>
           </div>
 
           <div className="media-div">
             <div className="media-right">
               <h1>Nissan Slyvia S14</h1>
-              <p>{t("cars.S14")}</p>
             </div>
             <div className="media-left">
               <div className="images">
@@ -354,7 +341,6 @@ const Media = () => {
             </div>
             <div className="media-right">
               <h1>Ferocid (Lore Friendly)</h1>
-              <p>{t("cars.FEROCID")}</p>
             </div>
           </div>
           <div className="media-div">
@@ -362,7 +348,6 @@ const Media = () => {
               <h1>
                 Toyota Chaser JZX <br /> (Custom Body Kit.)
               </h1>
-              <p>{t("cars.CHASER")}</p>
             </div>
             <div className="media-left">
               <div className="images">
@@ -383,24 +368,7 @@ const Media = () => {
               </div>
             </div>
           </div>
-          <div className="media-div">
-            <div className="media-left">
-              <div className="images">
-                <img onClick={handleClick} src={Vincet1} alt="" />
-                <img onClick={handleClick} src={Vincet2} alt="" />
-                <img
-                  onClick={handleClick}
-                  className="full-img"
-                  src={Vincet4}
-                  alt=""
-                />
-              </div>
-            </div>
-            <div className="media-right">
-              <h1>Vincent (Retired)</h1>
-              <p>{t("cars.VINCENT")}</p>
-            </div>
-          </div>
+
         </div>
         <Footer></Footer>
       </Transition>

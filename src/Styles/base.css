@@ -1,7 +1,15 @@
 @font-face {
   font-family: 'MonumentExtended';
-  src: url('https://res.cloudinary.com/dvi8iejpx/raw/upload/v1704476274/MonumentExtended-Regular_dzhbyj.otf') format('truetype');
+  src: url('../Fonts/MonumentExtended-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'MonumentExtended';
+  src: url('../Fonts/MonumentExtended-Ultrabold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 h1,h2,h3,h4,a,span{

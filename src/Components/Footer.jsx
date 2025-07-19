@@ -12,7 +12,7 @@ const Footer = () => {
       </span>
         
         <span>All Right Reserved ©</span>
-        {/* <a href="https://www.instagram.com/nixiedigital/" target='_blank'>Developed by Nixie Digital</a> */}
+        <a href="https://www.almego.studio" target="_blank" rel="noopener noreferrer">Design & Development by Almego Studio</a>
     </div>
   )
 }
