@@ -125,6 +125,13 @@ const Wiki = (props) => {
         <h4>
           {props.charname} is a character role-played by {props.nickname}.
         </h4>
+        {props.extraLink && (
+          <div style={{margin: '12px 0'}}>
+            <a href={props.extraLink.href} target="_blank" rel="noopener noreferrer" style={{color: '#53fc18', fontWeight: 'bold', fontSize: '16px', textDecoration: 'underline'}}>
+              {props.extraLink.text}
+            </a>
+          </div>
+        )}
         <div className="content-table" style={contentborderStyle}>
           <h1>
             <FontAwesomeIcon icon={faList}></FontAwesomeIcon>

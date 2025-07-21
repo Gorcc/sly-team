@@ -163,11 +163,7 @@ const Images = () => {
               <img  onClick={handleClick} src={Image8} className="full-img" alt="" onLoad={handleImageLoad} />
             </div>
           </div>
-          <div className="img-div">
-            <div className="images-wrap">
-              <img  onClick={handleClick} src={Image18} className="full-img" alt="" onLoad={handleImageLoad} />
-            </div>
-          </div>
+         
           <div className="img-div">
             <div className="images-wrap">
               <img  onClick={handleClick} src={Image19} className="full-img" alt="" onLoad={handleImageLoad} />
@@ -177,13 +173,12 @@ const Images = () => {
           <div className="img-div">
             <div className="images-wrap">
               <img  onClick={handleClick} src={Image21} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img  onClick={handleClick} src={Image23} className="full-img" alt="" onLoad={handleImageLoad} />
+             
             </div>
           </div>
           <div className="img-div">
             <div className="images-wrap">
-              <img  onClick={handleClick} src={Image24} className="full-img" alt="" onLoad={handleImageLoad} />
-              <img  onClick={handleClick} src={Image25} className="full-img" alt="" onLoad={handleImageLoad} />
+              
               <img  onClick={handleClick} src={Image26} className="full-img" alt="" onLoad={handleImageLoad} />
             </div>
           </div>

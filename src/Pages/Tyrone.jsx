@@ -11,10 +11,14 @@ const Tyrone = () => {
   return (
     <>
       <Header></Header>
+      <div style={{textAlign: 'center', margin: '24px 0'}}>
+        <a href="https://kick.com/mordredsly" target="_blank" rel="noopener noreferrer" style={{color: '#53fc18', fontWeight: 'bold', fontSize: '18px', textDecoration: 'underline'}}>Kick.com/mordredsly</a>
+      </div>
       <Transition>
         <Wiki
           image={charImg}
           color="#c00000"
+          extraLink={{ href: "https://kick.com/mordredsly", text: "Kick.com/mordredsly" }}
           contentApperance={t("wiki.1")}
           contentHobbies={t("wiki.2")}
           contentTraits={t("wiki.3")}

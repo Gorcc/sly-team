@@ -62,23 +62,23 @@ const RPCrew = () => {
             </div>
 
             <div className="rp-card">
-              <a href="/rian">
-                <div
-                  className={`rp-img rian ${isTimerActive ? "hover" : ""}`}
-                ></div>
-                <h2>Rian</h2>
-                <div className={`rp-img rian hover hidden`}></div>
-              </a>
-            </div>
-          </div>
-          <div className="second-lane">
-            <div className="rp-card">
               <a href="/tyrone">
                 <div
                   className={`rp-img tyrone ${isTimerActive ? "hover" : ""}`}
                 ></div>
                 <h2>Tyrone</h2>
                 <div className={`rp-img tyrone hover hidden`}></div>
+              </a>
+            </div>
+          </div>
+          <div className="second-lane">
+            <div className="rp-card">
+              <a href="/rian">
+                <div
+                  className={`rp-img rian ${isTimerActive ? "hover" : ""}`}
+                ></div>
+                <h2>Rian</h2>
+                <div className={`rp-img rian hover hidden`}></div>
               </a>
             </div>
             <div className="rp-card">

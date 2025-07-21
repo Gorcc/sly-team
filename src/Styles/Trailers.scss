@@ -49,6 +49,7 @@
   justify-content: center;
   align-items: center;
   margin: 60px;
+  gap: 48px; /* Add horizontal space between each social-link */
 }
 
 .social-link {
@@ -60,6 +61,9 @@
 
   h1 {
     font-size: 20px;
+    margin-top: 12px; /* Add space above the name */
+    letter-spacing: 1px;
+    margin-bottom: 0;
   }
 }
 

@@ -101,19 +101,6 @@ const DriftCrew = () => {
             <img  className="logo-img" src={USFlag} alt="" />
           </div>
         </div>
-        <div className="member">
-          <img src={SamaImg} className="drift-img" alt="" />
-          <div className="d-info">
-            <img  className="logo-img" src={SlyLogo} alt="" />
-            <h1>Sama</h1>
-            <img  className="logo-img" src={TurkishFlag} alt="" />
-          </div>
-        </div>
-        
-      </div>
-      <h1 className="dcrew-header ">Team Trainees</h1>
-      
-      <div className="team-trainees border-bottom">
         <div className="member ">
           <img src={mxviImg} className="drift-img" alt="" />
           <div className="d-info">
@@ -122,8 +109,25 @@ const DriftCrew = () => {
             <img  className="logo-img" src={TurkishFlag} alt="" />
           </div>
         </div>
-       
-     
+        {/* Remove Sama */}
+        {/* <div className="member">
+          <img src={SamaImg} className="drift-img" alt="" />
+          <div className="d-info">
+            <img  className="logo-img" src={SlyLogo} alt="" />
+            <h1>Sama</h1>
+            <img  className="logo-img" src={TurkishFlag} alt="" />
+          </div>
+        </div> */}
+        {/* Add VolkotsV2 */}
+        <div className="member">
+          <img src="https://github.com/Gorcc/cdn/blob/main/sly-team/pp_buu.png?raw=true" className="drift-img" alt="VolkotsV2" />
+          <div className="d-info">
+            <img className="logo-img" src={SlyLogo} alt="" />
+            <h1>VolkotsV2</h1>
+            <img className="logo-img" src={TurkishFlag} alt="" />
+          </div>
+        </div>
+        
       </div>
       <h1 className="dcrew-header ">Designer</h1>
       <div className="designer border-bottom">
