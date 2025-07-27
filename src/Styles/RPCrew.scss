@@ -12,8 +12,10 @@
 }
 
 .bg-glitch{
-  background-image: url("https://res.cloudinary.com/dvi8iejpx/image/upload/v1704475657/glitch_vz0vnh.gif");
-
+  background-image: url("../Assets/glitch.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .rp-container a{

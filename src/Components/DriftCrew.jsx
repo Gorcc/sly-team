@@ -59,6 +59,14 @@ const DriftCrew = () => {
           </div>
         </div>
         <div className="member">
+          <img src="https://github.com/Gorcc/cdn/blob/main/sly-team/mord.png?raw=true" className="drift-img mordred-img" alt="" />
+          <div className="d-info">
+            <img  className="logo-img" src={SlyLogo} alt="" />
+            <h1>Mordred</h1>
+            <img  className="logo-img" src={TurkishFlag} alt="" />
+          </div>
+        </div>
+        <div className="member">
           <img src={ThetImg} className="drift-img" alt="" />
           <div className="d-info">
             <img  className="logo-img" src={SlyLogo} alt="" />
