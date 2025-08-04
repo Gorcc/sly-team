@@ -6,6 +6,7 @@ import Blog3 from "../Assets/Blog/m3.webp"
 import Blog4 from "../Assets/Blog/m4.webp"
 import { useTranslation } from 'react-i18next'
 import SlyGif from "../Assets/slygif.gif"
+import NewGif from "../Assets/newgif.gif"
 
 const Blog = () => {
 
@@ -17,7 +18,7 @@ const Blog = () => {
         <div className="blog-left">
             <img src={Blog1} alt="" />
             <img src={Blog2} alt="" />
-            <img src={SlyGif} className="blog-gif" alt="" />
+            <img src={NewGif} className="blog-gif" alt="" />
             <img src={Blog3} alt="" />
             <img src={Blog4} alt="" />
         </div>
